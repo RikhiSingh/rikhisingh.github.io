@@ -167,6 +167,20 @@ img {
   text-align: center;
 }
 
+a{
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+a:hover{
+  text-decoration: none;
+  color: var(--first-color-alt);
+}
+
+
+
+
+
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -628,7 +642,7 @@ img {
 }
 
 .qualification__title{
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
 }
 
