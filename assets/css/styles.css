@@ -452,6 +452,11 @@ a:hover{
   cursor: pointer;
 }
 
+.btn-block{
+  border: none;
+}
+
+
 /*==================== ABOUT ====================*/
 
 .about__img{
@@ -1123,6 +1128,121 @@ a:hover{
     font-size: var(--normal-font-size) ;
   }
 
+  .button,
+  .button--flex{
+    margin-bottom: 1rem;
+  }
+
+
+  /* html,body{
+    width: 100%;
+    overflow-x: hidden; 
+  } */
+
+  /* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5){
+  html,body{
+    width:100%;
+    overflow-x:hidden;
+  }
+  } */
+
+
+  .qualification__data{
+    gap: .5rem;
+  }
+  .services__container{
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+
+  .services__content{
+    padding-right: 3.5rem;
+  }
+
+  .services__modal{
+    padding: 0 .5rem;
+  }
+
+  .project__img{
+    width: 300px;
+  }
+
+  .testimonial__data,
+  .testimonial__header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__img{
+    margin-right: 0;
+    margin-bottom: var(--mb-0-25);
+  }
+
+  .testimonial__data,
+  .testimonial__description{
+    text-align: center;
+  }
+
+
+  .india-flag{
+    width: 15px;
+    height: 10px;
+  }
+  
+  .gmail-logo{
+    width: 15px;
+    height: 10px;
+  }
+  
+  .maps-logo{
+    width: 10.5px;
+    height: 13px;
+  }
+
+}
+
+@media screen and (min-width: 350px) and (max-width: 567px){
+  .container{
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-0-25);
+  }
+
+  .nav__menu{
+    padding: 2rem .25rem 4rem;
+  }
+
+  .nav__list{
+    column-gap: 0;
+  }
+
+  .home__content{
+    grid-template-columns: .25fr 3fr;
+  }
+  
+  .home__blob{
+    width: 180px;
+  }
+
+  .skills__titles{
+    font-size: var(--normal-font-size) ;
+  }
+
+  .button,
+  .button--flex{
+    padding-bottom: 1rem;
+    border-right: 1rem;
+  }
+
 
   /* html,body{
     width: 100%;
@@ -1202,6 +1322,7 @@ a:hover{
 }
 
 
+
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .home__content{
@@ -1223,6 +1344,13 @@ a:hover{
   .contact__container,
   .footer__container{
     grid-template-columns: repeat(2, 1fr);  
+  }
+
+  .button,
+  .button--flex{
+    margin-bottom: 1rem;
+    border-right: 1rem;
+    
   }
 
 
@@ -1409,6 +1537,14 @@ a:hover{
   .home__social{
     transform: translateX(-6rem);
   }
+
+  .button,
+  .button--flex{
+    margin: 0 3px 1rem 0;
+    border-right: 1rem;
+    
+  }
+
   .services__container{
     grid-template-columns: repeat(3,238px);
   }
