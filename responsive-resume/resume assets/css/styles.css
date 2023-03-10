@@ -628,6 +628,10 @@ img{
   .bd-grid{
     justify-content: center;
   }
+
+  .education__line,.education__rounder{
+    visibility: hidden;
+  }
   
 }
 @media screen and (min-width: 320px)and (max-width: 967px) {
@@ -639,6 +643,9 @@ img{
   .bd-grid{
     justify-content: center;
     justify-items: center;
+  }
+  .education__line,.education__rounder{
+    visibility: hidden;
   }
   
 }
