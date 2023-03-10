@@ -624,6 +624,22 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem .5rem;
   }
+
+  .bd-grid{
+    justify-content: center;
+  }
+  
+}
+@media screen and (min-width: 320px)and (max-width: 967px) {
+  .nav__list{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem .5rem;
+  }
+
+  .bd-grid{
+    justify-content: center;
+    justify-items: center;
+  }
   
 }
 
