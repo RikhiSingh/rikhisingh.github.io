@@ -210,3 +210,125 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+// Hacker effect 
+// const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()+"
+
+// document.getElementById("hacker").onmouseover = event => {
+//     let iterations = 0;
+
+//     const intervel = setInterval(() => {
+//     event.target.innerText = event.target.innerText.split("")
+//         .map((letter,index) => {
+//            if (index < iterations){
+//             return event.target.dataset.value[index];
+//            }
+           
+//             return letters[event.target.innerText = Math.floor(Math.random() * 30)]
+//         })
+//         .join("");
+
+//         if (iterations >= event.target.dataset.value.length){
+//              clearInterval(intervel);
+//         }
+//         iterations += 1/3;
+//     },30);
+
+// }
+
+// const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+// document.getElementById("hacker").onmouseover = event => {
+//   const targetText = "RIKHI SINGH";
+//   const currentText = event.target.innerText;
+  
+//   if (currentText.includes(targetText)) {
+//     let iterations = 0;
+
+//     const interval = setInterval(() => {
+//       event.target.innerText = currentText.split("")
+//         .map((letter,index) => {
+//           if (index < currentText.indexOf(targetText) + iterations || index >= currentText.indexOf(targetText) + targetText.length + iterations) {
+//             return letter;
+//           }
+
+//           return letters[Math.floor(Math.random() * letters.length)];
+//         })
+//         .join("");
+
+//       if (iterations >= targetText.length){
+//         clearInterval(interval);
+//       }
+
+//       iterations += 1/3;
+//     },30);
+//   }
+// };
+
+// const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+// window.addEventListener('load', (event) => {
+//   const targetText = "RIKHI SINGH";
+//   const element = document.getElementById("hacker");
+//   const currentText = element.innerText;
+
+//   if (currentText.includes(targetText)) {
+//     let iterations = 0;
+
+//     const interval = setInterval(() => {
+//       element.innerText = currentText.split("")
+//         .map((letter,index) => {
+//           if (index < currentText.indexOf(targetText) + iterations || index >= currentText.indexOf(targetText) + targetText.length + iterations) {
+//             return letter;
+//           }
+
+//           return letters[Math.floor(Math.random() * letters.length)];
+//         })
+//         .join("");
+
+//       if (iterations >= targetText.length){
+//         clearInterval(interval);
+//       }
+
+//       iterations += 1/3;
+//     },50);
+//   }
+// });
+
+// const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+
+
+// const letters = "";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+
+window.addEventListener('load', (event) => {
+  const targetText = "RIKHI SINGH";
+  const element = document.getElementById("hacker");
+  const currentText = element.innerText;
+
+  if (currentText.includes(targetText)) {
+    let iterations = 0;
+
+    const interval = setInterval(() => {
+      element.innerText = currentText.split("")
+        .map((letter,index) => {
+          if (letter === ' ') {
+            return ' ';
+          }
+          if (index < currentText.indexOf(targetText) + iterations || index >= currentText.indexOf(targetText) + targetText.length + iterations) {
+            return letter;
+          }
+
+          return letters[Math.floor(Math.random() * letters.length)];
+        })
+        .join("");
+
+      if (iterations >= targetText.length){
+        clearInterval(interval);
+      }
+
+      iterations += 1/3;
+    },50);
+  }
+});
