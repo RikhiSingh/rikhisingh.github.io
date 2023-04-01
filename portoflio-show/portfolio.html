@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!-- Portfolio-->
+    <section id="project">
+
+        <!-- heading -->
+        <div class="project-heading">
+            <span>Let's see my work</span>
+            <h3>My project</h3>
+        </div>
+
+        <!-- filter -->
+        <ul class="project-filter">
+            <li class="list project-filter-active">All</li>
+            <li class="list">Website Design</li>
+            <li class="list">Github Repo</li>  
+        </ul>
+
+
+        <!-- container -->
+        <div class="projectcontainer">
+
+            <!-- box1 -->
+            <a href="" class="project-box">
+                <img src="images/b-1.jpg" alt="work">
+            </a>
+
+            <!-- box1 -->
+            <a href="" class="project-box">
+                <img src="images/b-1.jpg" alt="work">
+            </a>
+
+            <!-- box1 -->
+            <a href="" class="project-box">
+                <img src="images/b-1.jpg" alt="work">
+            </a>
+            <!-- box1 -->
+            <a href="" class="project-box">
+                <img src="images/b-1.jpg" alt="work">
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- using jquery -->
+    <script src="js/jQuery.js"></script>
+    <script type="text/javascript">
+
+        $(document).on('click','.project-filter li',function(){
+            $(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+        });
+
+    </script>
+</body>
+</html>
