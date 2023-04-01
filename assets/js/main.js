@@ -298,8 +298,8 @@ themeButton.addEventListener('click', () => {
 
 
 
-// const letters = "";
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = "*";
+// const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 
 window.addEventListener('load', (event) => {
