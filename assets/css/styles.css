@@ -13,3 +13,9 @@
 .button--flex:hover{
     transform: scale(1.05);
 }
+.img__logo_nav{
+    height: 7%;
+    width: 7%;
+    display: inline;
+    vertical-align: middle;
+}
