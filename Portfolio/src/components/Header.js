@@ -1,16 +1,19 @@
 import React from 'react';
 // images
-import Logo from '../assets/logo.svg'
+import Logo from '../assets/logo.png'
 
 const Header = () => {
-  return <header className='py-8'>
+  return <header className='py-7'>
     <div className="container mx-auto">
-      <div>
+      <div className='flex justify-between items-center'>
         {/* logo */}
         <a href="#">
-          <img src={Logo} alt="" />
+          <img className='w-[60px]' src={Logo} alt="" />
         </a>
         {/* button */}
+        <button className='btn btn-sm'>
+          Work with ME!
+        </button>
       </div>
     </div>
   </header>;
