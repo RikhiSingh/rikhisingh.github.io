@@ -8,11 +8,11 @@ const Header = () => {
     window.open('https://www.linkedin.com/in/rikhi-singh/', '_blank');
   };
 
-  return <header className='py-7'>
+  return <header className='py-7' id='header'>
     <div className="container mx-auto">
       <div className='flex justify-between items-center'>
         {/* logo */}
-        <a href="#">
+        <a href="#header">
           <img className='w-[60px]' src={Logo} alt="" />
         </a>
         {/* button */}

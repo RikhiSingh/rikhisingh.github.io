@@ -15,6 +15,15 @@ const About = () => {
     threshold: 0.5,
   });
 
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = process.env.PUBLIC_URL + '/resume.pdf';
+    link.download = 'RikhiSingh - Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className='section' id='about' ref={ref}>
       <div className="container mx-auto">
@@ -69,10 +78,8 @@ const About = () => {
             </div>
 
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>
-                <a href={linkedInLink} target='_blank'>Contact Me</a>
-              </button>
-              <a href="#" className='text-gradient btn-link'>My portfolio</a>
+              <button className='btn btn-lg' onClick={downloadResume}>My Portfolio</button>
+              <a href={linkedInLink} className='text-gradient btn-link' target='_blank'>Contact Me!</a>
             </div>
           </motion.div>
         </div>
