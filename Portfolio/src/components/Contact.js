@@ -1,4 +1,8 @@
 import React from 'react';
+// motion
+import { motion } from 'framer-motion';
+//import variants
+import { fadeIn } from '../variants';
 
 const Contact = () => {
   return <div className='section' id='contact'>Contact</div>;
