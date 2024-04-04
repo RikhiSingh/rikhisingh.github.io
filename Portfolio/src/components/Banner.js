@@ -20,6 +20,15 @@ const InstagramLink = "https://www.instagram.com/rikhi_singh/";
 
 
 const Banner = () => {
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = process.env.PUBLIC_URL + '/resume.pdf';
+    link.download = 'RikhiSingh - Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  
   return (
     <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
       <div className="container mx-auto mt-[-60px] md:mt-[-100px] lg:mt-0">
@@ -47,7 +56,7 @@ const Banner = () => {
             </motion.div>
             <motion.p variants={fadeIn('up', 0.7)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>Certified from Google, UMICH and Microsoft</motion.p>
             <motion.div variants={fadeIn('up', 0.94)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>My Portfolio</button>
+              <button className='btn btn-lg' onClick={downloadResume}>My Portfolio</button>
               <a href="#contact" className='text-gradient btn-link'>Contact Me!</a>
             </motion.div>
             {/* socials */}
