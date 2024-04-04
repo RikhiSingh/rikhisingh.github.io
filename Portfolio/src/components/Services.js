@@ -10,12 +10,7 @@ import { fadeIn } from '../variants';
 const services = [
   {
     name: 'UI/UX design',
-    description: 'lorem ipsum cofojanbgkjnajkgnkljag kjj fkjan akj kjn jn kjn lorem kljbngkjn kjlkj hiu hiu kjn knkj nj nkjn kjn kjnkj nkj nkj nkj nkj nkjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn kjn',
-    link: 'Learn more',
-  },
-  {
-    name: 'Web Development',
-    description: 'lorem ipsum cofojanbgkjnajkgnkljag kjj fkjan akj kjn jn kjn',
+    description: 'lorem ipsum cofojanbgkjnajkgnkljag kjj fkjan akj kjn ',
     link: 'Learn more',
   },
   {

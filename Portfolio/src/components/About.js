@@ -29,11 +29,11 @@ const About = () => {
       <div className="container mx-auto">
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           {/* image */}
-          <motion.div variants={fadeIn('right', 0.4)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'>
+          <motion.div variants={fadeIn('right', 0.2)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'>
 
           </motion.div>
           {/* text */}
-          <motion.div variants={fadeIn('left', 0.6  )} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1'>
+          <motion.div variants={fadeIn('left', 0.6 )} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1'>
             <h2 className='h2 text-accent'>About Me</h2>
             <h3 className='h3 mb-4'>Versatile IT professional with diverse certifications and expertise</h3>
             <p className='mb-6'>Specialization certifications from University of Michigan, Google, Microsoft, University of Helsinki with expertise in MERN stack, Cyber Security, AI, SQL Databses,  IT automation, 365 fundamentals, web design, IT support, and more. Proficiency in C#, ASP.NET, Python, JavaScript,  Bootstrap, Tailwind, and other technologies.</p>
@@ -43,7 +43,7 @@ const About = () => {
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   0{
                     inView ?
-                      <CountUp start={0} end={7} duration={8} /> : null
+                      <CountUp start={0} end={7} duration={12} /> : null
                   }+
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
