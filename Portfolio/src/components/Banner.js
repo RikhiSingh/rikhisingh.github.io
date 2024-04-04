@@ -9,6 +9,13 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
+// github link
+const githubLink = "https://github.com/RikhiSingh/";
+// linkedIn link
+const linkedInLink = "https://www.linkedin.com/in/rikhi-singh/";
+// instagram link
+const InstagramLink = "https://www.instagram.com/rikhi_singh/";
+
 
 
 
@@ -43,13 +50,13 @@ const Banner = () => {
             </motion.div>
             {/* socials */}
             <motion.div variants={fadeIn('up', 1.18)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href="#">
+              <a href={githubLink} target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="#">
+              <a href={linkedInLink} target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a href="#">
+              <a href={InstagramLink} target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
               </a>
             </motion.div>
