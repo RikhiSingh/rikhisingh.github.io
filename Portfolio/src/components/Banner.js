@@ -30,11 +30,13 @@ const Banner = () => {
             <motion.div variants={fadeIn('up', 0.46)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
               
               < TypeAnimation sequence={[
-                'Full Stack Dev',
+                'Full Stack Developer',
                 2000,
-                'Cyber Analyst',
+                'CyberSecurity Analyst',
                 2000,
-                'Software Dev',
+                'Software Developer',
+                2000,
+                'Penetration Testing',
                 2000,
               ]}
                 speed={50}
