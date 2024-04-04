@@ -55,7 +55,7 @@ const Work = () => {
 
               </div>
               {/* img */}
-              <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt="" />
+              <img className='group-hover:scale-125 transition-all duration-500' src={Img2} alt="" />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient '>
@@ -75,7 +75,7 @@ const Work = () => {
 
               </div>
               {/* img */}
-              <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt="" />
+              <img className='group-hover:scale-125 transition-all duration-500' src={Img3} alt="" />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient '>
