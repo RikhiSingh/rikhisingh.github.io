@@ -14,7 +14,7 @@ const services = [
     link: 'Learn more',
   },
   {
-    name: 'CYbersecurity',
+    name: 'Cybersecurity',
     description: 'lorem ipsum cofojanbgkjnajkgnkljag kjj fkjan akj kjn jn kjn',
     link: 'Learn more',
   },
@@ -23,7 +23,6 @@ const services = [
     description: 'lorem ipsum cofojanbgkjnajkgnkljag kjj fkjan akj kjn jn kjn',
     link: 'Learn more',
   },
-
 ];
 
 
