@@ -16,7 +16,7 @@ const Contact = () => {
                 Get in Touch
               </h4>
               <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
-                LEt's work <br />
+                Let's work <br />
                 together !
               </h2>
             </div>
