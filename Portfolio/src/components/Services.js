@@ -3,7 +3,6 @@ import React from 'react';
 import { BsArrowUpRight } from 'react-icons/bs';
 // motion
 import { motion } from 'framer-motion';
-
 // fadeIn
 import { fadeIn } from '../variants';
 
