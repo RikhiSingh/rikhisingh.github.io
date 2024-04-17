@@ -57,7 +57,7 @@ const Banner = () => {
             <motion.p variants={fadeIn('up', 0.7)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>Certified from University of Michigan, Google, University of Helsinki, Microsoft and Member of CIPS Ontario</motion.p>
             <motion.div variants={fadeIn('up', 0.94)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
               <button className='btn btn-lg' onClick={downloadResume}>My Portfolio</button>
-              <a href="#contact" className='text-gradient btn-link'>Contact Me!</a>
+              <a href={linkedInLink} target='_blank' className='text-gradient btn-link'>Contact Me!</a>
             </motion.div>
             {/* socials */}
             <motion.div variants={fadeIn('up', 1.18)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
