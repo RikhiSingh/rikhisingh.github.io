@@ -7,7 +7,7 @@ import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 
 const Navbar = () => {
-  const [setActive, setSetActive] = useState(' ');
+  const [active, setActive] = useState(' ');
 
   return (
     <nav
@@ -17,17 +17,24 @@ const Navbar = () => {
         <Link
           to="/"
           className='flex items-center gap-2'
-          onClick={()=>{
+          onClick={() => {
             setActive("");
-            window.scrollTo(0,0);
+            window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className='w-9 h-9 object-contain'/>
+          <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
           <p className='tex-white text-[18px] font-bold cursor-pointer'>Rikhi <span className='sm:block hidden '>| Web Developer</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((link) =>(
-            <li>
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={`${
+                active === link.title
+                  ? "text-white"
+                  : "text-secondary"}
+               hover:text-white text-[18px] font-medium cursor-pointer`}
+            >
               <a href={`#${link.id}`}>
                 {link.title}
               </a>
