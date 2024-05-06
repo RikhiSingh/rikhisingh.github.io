@@ -1,21 +1,21 @@
 import Image from "next/image";
 
 const Homepage = () => {
-  return <div className="h-full flex flex-col"> 
+  return <div className="h-full flex flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
     {/* Image container */}
     <div className="h-1/2 relative bg">
-      <Image src='/hero.webp' alt="hero Image" fill className="object-contain"/>
+      <Image src='/hero.webp' alt="hero Image" fill className="object-contain" />
     </div>
     {/* Text container */}
-    <div className="h-1/2">
+    <div className="h-1/2 flex flex-col gap-8 items-center justify-center">
       {/* title */}
-      <h1>Hi, I am Rikhi</h1>
+      <h1 className="text-4xl md:text-6xl font-bold">Hi, I am Rikhi</h1>
       {/* description */}
-      <p>Full Stack Web Developer and White Hat <br /> Certified from University of Michigan, Google, University of Helsinki, Microsoft and Member of CIPS Ontario</p>
+      <p className="md:text-xl flex flex-col justify-center items-center"><span className="font-semibold text-2xl md:text-4xl">Web and Software Developer</span> <br /> Certified from University of Michigan, Google, University of Helsinki, Microsoft and Member of CIPS Ontario</p>
       {/* Buttons */}
-      <div>
-        <div>See my Resume</div>
-        <div>See my work</div>
+      <div className="flex gap-4">
+        <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white">See my Resume</div>
+        <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white">See my work</div>
       </div>
     </div>
   </div>;
