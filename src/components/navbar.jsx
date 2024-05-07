@@ -53,9 +53,9 @@ const Navbar = () => {
                     className="w-10 h-8 flex flex-col justify-between z-50 relative"
                     onClick={(() => setOpen((prev) => !prev))}
                 >
-                    <div className="w-10 h-1 bg-white rounded"></div>
-                    <div className="w-10 h-1 bg-white rounded"></div>
-                    <div className="w-10 h-1 bg-white rounded"></div>
+                    <div className="w-10 h-1 bg-black rounded"></div>
+                    <div className="w-10 h-1 bg-black rounded"></div>
+                    <div className="w-10 h-1 bg-black rounded"></div>
                 </button>
                 {/* Menu List */}
                 {open && (
