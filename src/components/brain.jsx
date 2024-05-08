@@ -857,7 +857,7 @@ const Brain = ({ scrollYProgress }) => {
                     id="Fill-196"
                   />
                 </g>
-                <Link href="https://lama.dev">
+                <Link href="https://github.com/RikhiSingh">
                   <g
                     id="rs-cog8"
                     transform="translate(211.549 164.6)"
@@ -917,7 +917,7 @@ const Brain = ({ scrollYProgress }) => {
                       mask="url(#mask-12)"
                     />
                   </g>
-                  <Link href="https://lama.dev">
+                  <Link href="https://github.com/RikhiSingh">
                     <g
                       id="Fill-63"
                       transform="translate(114.23 121.907)"
