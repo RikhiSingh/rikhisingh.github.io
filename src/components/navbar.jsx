@@ -93,13 +93,13 @@ const Navbar = () => {
             {/* SOCIAL */}
             <div className="hidden md:flex justify-end items-center gap-4 w-1/3">
                 <Link href='https://github.com/RikhiSingh' target="_blank">
-                    <Image src='./github.png' alt="github logo" width={24} height={24} />
+                    <Image src='/github.png' alt="github logo" width={24} height={24} />
                 </Link>
                 <Link href='https://www.linkedin.com/in/rikhi-singh/' target="_blank">
-                    <Image src='./linkedin.png' alt="github logo" width={24} height={24} />
+                    <Image src='/linkedin.png' alt="github logo" width={24} height={24} />
                 </Link>
                 <Link href='https://www.instagram.com/rikhi_singh/' target="_blank">
-                    <Image src='./instagram.png' alt="instagram logo" width={24} height={24} />
+                    <Image src='/instagram.png' alt="instagram logo" width={24} height={24} />
                 </Link>
             </div>
             {/* menu */}
