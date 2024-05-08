@@ -35,13 +35,13 @@ const AboutPage = () => {
                         <h1 className="font-bold text-2xl">ABOUT ME</h1>
                         {/* BIOGRAPHY DESC */}
                         <p className="text-lg">
-                            A diligent individual with my journey in technology is fueled by a commitment to continuous learning and a drive to craft efficient, scalable, and maintainable solutions. Currently, I'm a Software Developer at the University of Guelph, deeply immersed in web and software development. <br /> <br />
+                            A diligent individual with my journey in technology is fueled by a commitment to continuous learning and a drive to craft efficient, scalable, and maintainable solutions. Currently, I&apos;m a Software Developer at the University of Guelph, deeply immersed in web and software development. <br /> <br />
 
                             With expertise in JavaScript, C#, Python, SQL, and HTML/CSS, coupled with frameworks like ReactJS, NodeJS (MERN), TSX/TS, Bootstrap and more, I bring a diverse skill set to the table. My proficiency extends to essential tools and platforms such as Docker, PenTesting, VCS, and the Microsoft 365 Suite. <br /> <br />
 
-                            Throughout my career, I've optimized websites for SEO, managed server migrations, and delved into cybersecurity principles. I excel at problem-solving, troubleshooting, and maintaining a meticulous attention to detail. <br /> <br />
+                            Throughout my career, I&apos;ve optimized websites for SEO, managed server migrations, and delved into cybersecurity principles. I excel at problem-solving, troubleshooting, and maintaining a meticulous attention to detail. <br /> <br />
 
-                            Certified in cybersecurity, IT automation, and more, I'm equipped to thrive in the fast-paced tech landscape. I'm always eager to collaborate, learn, and contribute to innovative projects. Let's connect and grow together in the exciting world of technology!
+                            Certified in cybersecurity, IT automation, and more, I&apos;m equipped to thrive in the fast-paced tech landscape. I&apos;m always eager to collaborate, learn, and contribute to innovative projects. Let&apos;s connect and grow together in the exciting world of technology!
                         </p>
                         {/* BIOGRAPHY QUOTE */}
                         <span className="italic">
@@ -179,7 +179,7 @@ const AboutPage = () => {
                                     </div>
                                     {/* JOB DESC */}
                                     <div className="p-3 text-sm italic">
-                                        Utilized C#, JavaScript, MERN Stack, TS, SQL, Python and more to develop websites and automation scripts, aligning with the job's emphasis on software development skills and the ability to automate tasks to improve operational efficiency.{" "}
+                                        Utilized C#, JavaScript, MERN Stack, TS, SQL, Python and more to develop websites and automation scripts, aligning with the job&apos;s emphasis on software development skills and the ability to automate tasks to improve operational efficiency.{" "}
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-red-400 text-sm font-semibold text-center">
