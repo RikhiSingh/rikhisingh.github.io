@@ -41,9 +41,19 @@ const ContactPage = () => {
                 {/* form container */}
                 <form className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24">
                     <span>Dear Rikhi,</span>
-                    <textarea rows={6} className="bg-transparent border-b-2 border-b-black outline-none resize-none" placeholder="Message goes here"/>
+                    <textarea
+                        rows={6}
+                        className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+                        placeholder="Message goes here"
+                        name="user_message"
+                    />
                     <span>My email is:</span>
-                    <input type="text" className="bg-transparent border-b-2 border-b-black outline-none" placeholder="Email goes here"/>
+                    <input
+                        name="user_email"
+                        type="text"
+                        className="bg-transparent border-b-2 border-b-black outline-none"
+                        placeholder="Email goes here"
+                    />
                     <span>Regards</span>
                     <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">Send</button>
                     {success && <span className="text-green-600 font-semibold text-center bg-green-200 rounded-xl p-2">Your message has been sent successfully!</span>}
