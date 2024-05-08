@@ -3,6 +3,11 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID || 'fallback_service_id';
+const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID || 'fallback_template_id';
+const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY || 'fallback_public_key';
+
+
 const ContactPage = () => {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
@@ -17,10 +22,10 @@ const ContactPage = () => {
 
         emailjs
             .sendForm(
-                process.env.NEXT_PUBLIC_SERVICE_ID,
-                process.env.NEXT_PUBLIC_TEMPLATE_ID,
+                serviceId,    // Fallback value if NEXT_PUBLIC_SERVICE_ID is not defined
+                templateId,   // Fallback value if NEXT_PUBLIC_TEMPLATE_ID is not defined
                 form.current,
-                process.env.NEXT_PUBLIC_PUBLIC_KEY
+                publicKey     // Fallback value if NEXT_PUBLIC_PUBLIC_KEY is not defined
             )
             .then(
                 () => {
