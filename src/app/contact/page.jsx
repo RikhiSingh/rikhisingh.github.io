@@ -78,6 +78,7 @@ const ContactPage = () => {
                         rows={6}
                         className="bg-transparent border-b-2 border-b-black outline-none resize-none"
                         name="user_message"
+                        placeholder="Type your message here"
                     />
                     <span>My mail address is:</span>
                     <input
@@ -85,6 +86,7 @@ const ContactPage = () => {
                         name="user_email"
                         type="email"
                         className="bg-transparent border-b-2 border-b-black outline-none"
+                        placeholder="Your E-Mail Address Please"
                     />
                     <span>Regards</span>
                     <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
