@@ -10,7 +10,28 @@ const AboutPage = () => {
             animate={{ y: "0%" }}
             transition={{ duration: 1 }}
         >
-            About
+            {/* Container */}
+            <div>
+                {/* text container */}
+                <div>
+                    {/* biography container */}
+                    <div className="">
+
+                    </div>
+                    {/* skills container */}
+                    <div className="">
+
+                    </div>
+                    {/* experience container */}
+                    <div className="">
+
+                    </div>
+                </div>
+                {/* svg container */}
+                <div className="hidden">
+
+                </div>
+            </div>
         </motion.div>
     );
 }
