@@ -127,9 +127,12 @@ const AboutPage = () => {
                             ></path>
                         </motion.svg>
                     </div>
-                    {/* Experience container */}
-                    <div className="flex flex-col gap-12 justify-center pb-48">
-                        {/* Experience TITLE */}
+                    {/* EXPERIENCE CONTAINER */}
+                    <div
+                        className="flex flex-col gap-12 justify-center pb-48"
+                        ref={experienceRef}
+                    >
+                        {/* EXPERIENCE TITLE */}
                         <motion.h1
                             initial={{ x: "-300px" }}
                             animate={isExperienceRefInView ? { x: "0" } : {}}
@@ -138,91 +141,112 @@ const AboutPage = () => {
                         >
                             EXPERIENCE
                         </motion.h1>
-                        {/* Experience list */}
+                        {/* EXPERIENCE LIST */}
                         <motion.div
                             initial={{ x: "-300px" }}
                             animate={isExperienceRefInView ? { x: "0" } : {}}
                             className=""
                         >
-                            {/* Experience list item 1 */}
+                            {/* EXPERIENCE LIST ITEM */}
                             <div className="flex justify-between h-48">
-                                {/* left */}
-                                <div className="w-1/3">
+                                {/* LEFT */}
+                                <div className="w-1/3 ">
                                     {/* JOB TITLE */}
-                                    <div className="bg-pink-200 p-3 font-bold rounded-b-lg rounded-s-lg text-center text-lg">Web Developer</div>
-                                    {/* JOB Description */}
-                                    <div className="p-3 text-sm italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, doloribus explicabo modi ea eius quia aperiam veritatis enim assumenda saepe amet necessitatibus aliquam, cupiditate deserunt, ut voluptate atque perferendis deleniti?</div>
-                                    {/* JOB Date */}
-                                    <div className="p-3 text-red-400 font-semibold text-center">2023 - present</div>
-                                    {/* JOB company */}
-                                    <div className="p-2 rounded bg-teal-50 text-base font-bold text-center">University of Guelph</div>
+                                    <div className="bg-white p-3 text-lg font-semibold rounded-b-lg rounded-s-lg text-center">
+                                        WEB DEVELOPER
+                                    </div>
+                                    {/* JOB DESC */}
+                                    <div className="p-3 text-sm italic">
+                                        I led web development, offering expertise in JavaScript
+                                        frameworks.{" "}
+                                    </div>
+                                    {/* JOB DATE */}
+                                    <div className="p-3 text-red-400 text-sm font-semibold">
+                                        2023 - Present
+                                    </div>
+                                    {/* JOB COMPANY */}
+                                    <div className="p-2 rounded bg-white text-base font-semibold text-center">
+                                        UNIVERSITY OF GUELPH
+                                    </div>
                                 </div>
-                                {/* center */}
-                                <div className="w-1/6">
-                                    {/* Line */}
+                                {/* CENTER */}
+                                <div className="w-1/6 flex justify-center">
+                                    {/* LINE */}
                                     <div className="w-1 h-full bg-gray-600 rounded relative">
-                                        {/* circle */}
+                                        {/* LINE CIRCLE */}
                                         <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                                     </div>
                                 </div>
-                                {/* right */}
-                                <div className="w-1/3"></div>
+                                {/* RIGHT */}
+                                <div className="w-1/3 "></div>
                             </div>
-                            {/* Experience list item 2 */}
+                            {/* EXPERIENCE LIST ITEM */}
                             <div className="flex justify-between h-48">
-                                {/* left */}
-                                <div className="w-1/3">
-                                </div>
-                                {/* center */}
-                                <div className="w-1/6">
-                                    {/* Line */}
+                                {/* LEFT */}
+                                <div className="w-1/3 "></div>
+                                {/* CENTER */}
+                                <div className="w-1/6 flex justify-center">
+                                    {/* LINE */}
                                     <div className="w-1 h-full bg-gray-600 rounded relative">
-                                        {/* circle */}
+                                        {/* LINE CIRCLE */}
                                         <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                                     </div>
                                 </div>
-                                {/* right */}
-                                <div className="w-1/3">
+                                {/* RIGHT */}
+                                <div className="w-1/3 ">
                                     {/* JOB TITLE */}
-                                    <div className="bg-pink-200 p-3 font-bold rounded-b-lg rounded-s-lg text-center text-lg">Web Developer</div>
-                                    {/* JOB Description */}
-                                    <div className="p-3 text-sm italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, doloribus explicabo modi ea eius quia aperiam veritatis enim assumenda saepe amet necessitatibus aliquam, cupiditate deserunt, ut voluptate atque perferendis deleniti?</div>
-                                    {/* JOB Date */}
-                                    <div className="p-3 text-red-400 font-semibold text-center">2023 - present</div>
-                                    {/* JOB company */}
-                                    <div className="p-2 rounded bg-teal-50 text-base font-bold text-center">University of Guelph</div>
-
+                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                                        Senior React Developer
+                                    </div>
+                                    {/* JOB DESC */}
+                                    <div className="p-3 text-sm italic">
+                                        I spearheaded React-based application development,
+                                        leveraging advanced skills.{" "}
+                                    </div>
+                                    {/* JOB DATE */}
+                                    <div className="p-3 text-red-400 text-sm font-semibold">
+                                        2019 - 2024{" "}
+                                    </div>
+                                    {/* JOB COMPANY */}
+                                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                                        Microsoft
+                                    </div>
                                 </div>
                             </div>
-                            {/* Experience list item 3 */}
+                            {/* EXPERIENCE LIST ITEM */}
                             <div className="flex justify-between h-48">
-                                {/* left */}
-                                <div className="w-1/3">
+                                {/* LEFT */}
+                                <div className="w-1/3 ">
                                     {/* JOB TITLE */}
-                                    <div className="bg-pink-200 p-3 font-bold rounded-b-lg rounded-s-lg text-center text-lg">Web Developer</div>
-                                    {/* JOB Description */}
-                                    <div className="p-3 text-sm italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, doloribus explicabo modi ea eius quia aperiam veritatis enim assumenda saepe amet necessitatibus aliquam, cupiditate deserunt, ut voluptate atque perferendis deleniti?</div>
-                                    {/* JOB Date */}
-                                    <div className="p-3 text-red-400 font-semibold text-center">2023 - present</div>
-                                    {/* JOB company */}
-                                    <div className="p-2 rounded bg-teal-50 text-base font-bold text-center">University of Guelph</div>
+                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                                        Freelancer{" "}
+                                    </div>
+                                    {/* JOB DESC */}
+                                    <div className="p-3 text-sm italic">
+                                        I provided web solutions, applying a range of technologies
+                                        to address client requirements.{" "}
+                                    </div>
+                                    {/* JOB DATE */}
+                                    <div className="p-3 text-red-400 text-sm font-semibold">
+                                        2010 - 2019{" "}
+                                    </div>
                                 </div>
-                                {/* center */}
-                                <div className="w-1/6">
-                                    {/* Line */}
+                                {/* CENTER */}
+                                <div className="w-1/6 flex justify-center">
+                                    {/* LINE */}
                                     <div className="w-1 h-full bg-gray-600 rounded relative">
-                                        {/* circle */}
+                                        {/* LINE CIRCLE */}
                                         <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                                     </div>
                                 </div>
-                                {/* right */}
-                                <div className="w-1/3"></div>
+                                {/* RIGHT */}
+                                <div className="w-1/3 "></div>
                             </div>
                         </motion.div>
                     </div>
                 </div>
                 {/* svg container */}
-                <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:1/2">
+                <div className="hidden lg:block w-1/3 sticky top-0 z-40 xl:1/2">
                     <Brain scrollYProgress={scrollYProgress} />
                 </div>
             </div>
