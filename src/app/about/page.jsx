@@ -35,30 +35,34 @@ const AboutPage = () => {
                         <h1 className="font-bold text-2xl">ABOUT ME</h1>
                         {/* BIOGRAPHY DESC */}
                         <p className="text-lg">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                            harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-                            reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-                            suscipit! Vel doloremque numquam quam nihil.
+                            A diligent individual with my journey in technology is fueled by a commitment to continuous learning and a drive to craft efficient, scalable, and maintainable solutions. Currently, I'm a Software Developer at the University of Guelph, deeply immersed in web and software development. <br /> <br />
+
+                            With expertise in JavaScript, C#, Python, SQL, and HTML/CSS, coupled with frameworks like ReactJS, NodeJS (MERN), TSX/TS, Bootstrap and more, I bring a diverse skill set to the table. My proficiency extends to essential tools and platforms such as Docker, PenTesting, VCS, and the Microsoft 365 Suite. <br /> <br />
+
+                            Throughout my career, I've optimized websites for SEO, managed server migrations, and delved into cybersecurity principles. I excel at problem-solving, troubleshooting, and maintaining a meticulous attention to detail. <br /> <br />
+
+                            Certified in cybersecurity, IT automation, and more, I'm equipped to thrive in the fast-paced tech landscape. I'm always eager to collaborate, learn, and contribute to innovative projects. Let's connect and grow together in the exciting world of technology!
                         </p>
                         {/* BIOGRAPHY QUOTE */}
                         <span className="italic">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Life Long Learner
                         </span>
                         {/* BIOGRAPHY SIGN SVG*/}
                         <div className="self-end">
-                            <svg
-                                width="185"
-                                height="77"
-                                viewBox="0 0 370 114"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M66 2C66 29.4851 68.6687 64.5118 49.3333 87.4444C42.4997 95.5495 35.7683 97.6796 26.2222 101C20.002 103.164 8.87322 103.873 4 99C-0.260934 94.7391 2.94804 88.1756 8.22222 86.2222C13.7053 84.1915 17.942 84 23.7778 84C33.359 84 41.3193 83.5602 50.2222 87C56.6125 89.469 63.5773 91.9131 69.5555 95.5C75.4778 99.0533 87.1838 104.357 93.5 99.4444C96.1292 97.3995 96.2752 92.5118 96.9444 89.5C97.9646 84.9092 92.6432 83.2024 89 83C84.472 82.7484 82.3397 81.8856 82 88C81.8025 91.5554 83.5627 94.4193 86 97C88.9648 100.139 92.0717 100.96 96 98.7778C99.3106 96.9386 98 90.7299 98 87.5C98 85.0327 98.4365 83.1348 99.2222 80.7778C100.357 77.3743 99.2311 78.4486 101.5 77.9444C105.352 77.0886 108 76.4766 108 81.5C108 85.6646 109 89.3473 109 93.5C109 100.142 108.863 95.0454 110.5 91.4444C112.765 86.4616 116.631 81.205 121.5 78.5C127.057 75.4129 126 82.1509 126 85.5C126 92.5532 124.42 102 134 102C142.932 102 153 102.569 153 91.2222C153 87.1735 153.772 81.3206 148 81C141.934 80.663 142.107 81.8068 139.5 86.5C134.378 95.7204 137.972 105 149.5 105C153.589 105 153.996 99.8977 155.5 96.8889C157.902 92.0843 161 85.4067 161 80C161 74.0547 158.407 82.7413 157.222 84.2222C155.194 86.7574 155 92.5718 155 95.7778C155 99.9302 153.8 104.999 158 107.222C161.954 109.316 164.884 106.382 167.778 103.778C171.15 100.743 175.896 99.1107 180 97C186.143 93.8409 191.659 91.4099 198.222 89.2222C206.505 86.4614 214.839 87 223.5 87C230.613 87 231.628 104 222.5 104C216.954 104 199.251 107.814 207 95.2222C211.456 87.9805 214.484 80.6007 220 73.7778C229.781 61.6805 242.696 50.8197 256.222 43C264.769 38.0591 274.192 34.6264 283 30.2222C286.55 28.4473 280.07 32.3343 278.5 33.5556C271.707 38.8391 266.609 45.3914 260.556 51.4444C255.356 56.6444 250.682 61.459 246.5 67.5C242.917 72.6757 239.364 77.3825 236.556 83C233.829 88.4524 231.82 94.3142 228.556 99.4444C226.693 102.371 225.518 107.823 222.5 109.5C214.795 113.78 217.517 100.438 218.056 95.0556C218.678 88.8318 227.982 85.7572 233.056 88.6111C239.614 92.3003 245.506 97.7883 252 101.778C254.886 103.551 259.46 107 263 107C271.267 107 273.32 81.9392 268.778 77.2222C264.112 72.3774 261.206 80.5039 261 84C260.576 91.2135 257.836 96.9269 264.778 102C272.242 107.454 285.041 112.276 292.111 104.833C298.002 98.6323 304.301 90.8902 308.556 83.4444C310.355 80.295 310.132 84.6251 309.444 86C305.387 94.1158 303 102.264 303 111.5C303 116.021 337.534 99.1863 340.5 98C347.33 95.2679 355.47 93.8299 361.778 90C363.935 88.6902 365.473 88 368 88"
-                                    stroke="black"
-                                    strokeWidth="2"
-                                />
+                            <svg width="136" height="100" viewBox="0 0 136 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 15C10.6439 17.764 11.896 21.1864 13.3333 24.7222C17.4964 34.9634 21.0182 45.4959 24.4444 56C28.9203 69.7221 33.7983 83.689 36 98" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M2.00057 48.8012C2.00057 39.5303 1.79625 32.6268 9.11168 25.4679C15.2432 19.4675 29.3365 7.37709 38.6672 13.8567C45.4482 18.5657 51.6695 36.0698 44.6672 42.6901C38.3791 48.6353 29.0175 50.1805 21.7783 54.579C17.8739 56.9513 22.1597 58.5757 24.445 59.8012C34.0562 64.955 43.0849 70.5361 50.7784 78.3568C52.9712 80.5859 55.2276 84.4147 58.0006 85.8012" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M60 65C60.6488 68.4603 62.4155 81.7077 65 83" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M61 58C59.8125 56.6641 59.9265 56 58 56" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M49.7391 6.37619C50.1482 9.03554 51.8853 11.8268 52.8746 14.2466C57.177 24.7713 60.3015 35.6896 63.8078 46.4919C66.3455 54.3102 69.3153 62.0251 71.4874 69.9578C72.079 72.1185 72.5914 74.2786 73.2959 76.3924" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M76.8949 43.1838C76.7631 44.041 76.0648 44.9342 75.6407 45.6376C73.9967 48.3644 72.3031 51.0608 70.6331 53.7716C69.9075 54.9494 69.2325 56.1556 68.5882 57.3797C67.9272 58.6357 68.1839 58.7869 69.2244 59.7608C72.0865 62.4396 75.1148 64.726 78.6035 66.5407C80.5353 67.5455 82.5827 68.3071 84.4927 69.3489C84.8941 69.5679 85.0978 69.8956 85.5652 70.0124" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M68.2247 2.28647C70.1197 5.99029 72.2756 9.54426 74.1139 13.2833C75.5304 16.1642 76.8445 19.0936 78.2854 21.9626C79.9297 25.2365 81.7021 28.4447 83.1295 31.8234C86.9497 40.866 90.382 50.0877 93.3811 59.4336C94.581 63.173 95.7155 66.9512 96.362 70.8303" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M89.6549 48.255C89.6549 44.4803 91.0285 39.5182 94.5989 37.5308C96.35 36.5562 98.4282 37.0805 100.052 38.0216C103.379 39.9501 105.34 43.9759 106.795 47.3825C108.446 51.2476 109.944 55.2117 110.558 59.3973C110.722 60.5174 111.195 61.5659 111.412 62.6509" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M112.23 41.5479C113.485 43.6384 113.761 46.4247 114.484 48.7276C115.118 50.7464 115.882 52.9074 117.592 54.2715C117.872 54.4944 119.592 55.3548 119.592 54.4714" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M110.104 32.8776C110.125 33.2395 110.344 33.5138 110.431 33.8592" stroke="black" stroke-width="3" stroke-linecap="round" />
+                                <path d="M72.6416 92.5877C73.3 92.478 74.1801 91.5995 74.5865 91.279C80.2937 86.7779 85.923 82.1506 91.8906 77.9919C102.409 70.6615 113.767 65.0788 125.299 59.5608C128.196 58.175 131.172 56.9288 133.824 55.1258" stroke="black" stroke-width="3" stroke-linecap="round" />
                             </svg>
+
                         </div>
                         {/* BIOGRAPHY SCROLL SVG */}
                         <div className="flex">
@@ -198,68 +202,7 @@ const AboutPage = () => {
                                 {/* RIGHT */}
                                 <div className="w-1/3 "></div>
                             </div>
-                            {/* EXPERIENCE LIST ITEM */}
-                            <div className="flex justify-between h-48">
-                                {/* LEFT */}
-                                <div className="w-1/3 "></div>
-                                {/* CENTER */}
-                                <div className="w-1/6 flex justify-center">
-                                    {/* LINE */}
-                                    <div className="w-1 h-full bg-gray-600 rounded relative">
-                                        {/* LINE CIRCLE */}
-                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                                    </div>
-                                </div>
-                                {/* RIGHT */}
-                                <div className="w-1/3 ">
-                                    {/* JOB TITLE */}
-                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                                        Senior React Developer
-                                    </div>
-                                    {/* JOB DESC */}
-                                    <div className="p-3 text-sm italic">
-                                        I spearheaded React-based application development,
-                                        leveraging advanced skills.{" "}
-                                    </div>
-                                    {/* JOB DATE */}
-                                    <div className="p-3 text-red-400 text-sm font-semibold">
-                                        2019 - 2024{" "}
-                                    </div>
-                                    {/* JOB COMPANY */}
-                                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                                        Microsoft
-                                    </div>
-                                </div>
-                            </div>
-                            {/* EXPERIENCE LIST ITEM */}
-                            <div className="flex justify-between h-48">
-                                {/* LEFT */}
-                                <div className="w-1/3 ">
-                                    {/* JOB TITLE */}
-                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                                        Freelancer{" "}
-                                    </div>
-                                    {/* JOB DESC */}
-                                    <div className="p-3 text-sm italic">
-                                        I provided web solutions, applying a range of technologies
-                                        to address client requirements.{" "}
-                                    </div>
-                                    {/* JOB DATE */}
-                                    <div className="p-3 text-red-400 text-sm font-semibold">
-                                        2010 - 2019{" "}
-                                    </div>
-                                </div>
-                                {/* CENTER */}
-                                <div className="w-1/6 flex justify-center">
-                                    {/* LINE */}
-                                    <div className="w-1 h-full bg-gray-600 rounded relative">
-                                        {/* LINE CIRCLE */}
-                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                                    </div>
-                                </div>
-                                {/* RIGHT */}
-                                <div className="w-1/3 "></div>
-                            </div>
+                            
                         </motion.div>
                     </div>
                 </div>
