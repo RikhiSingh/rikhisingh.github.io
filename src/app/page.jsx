@@ -4,6 +4,22 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Homepage = () => {
+
+  const downloadResume = () => {
+    // Create an anchor element
+    const link = document.createElement('a');
+    // Set the href attribute to the path of your resume PDF
+    link.href = './RikhiSingh - Resume.pdf';
+    // Set the download attribute to force download the file
+    link.download = 'RikhiSingh - Resume.pdf';
+    // Append the anchor element to the body
+    document.body.appendChild(link);
+    // Trigger a click event on the anchor element
+    link.click();
+    // Clean up: remove the anchor element from the DOM
+    document.body.removeChild(link);
+  };
+
   return (
     <motion.div
       className="h-full"
