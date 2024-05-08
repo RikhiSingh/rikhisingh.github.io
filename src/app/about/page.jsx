@@ -179,8 +179,7 @@ const AboutPage = () => {
                                     </div>
                                     {/* JOB DESC */}
                                     <div className="p-3 text-sm italic">
-                                        I led web development, offering expertise in JavaScript
-                                        frameworks.{" "}
+                                        Utilized C#, JavaScript, MERN Stack, TS, SQL, Python and more to develop websites and automation scripts, aligning with the job's emphasis on software development skills and the ability to automate tasks to improve operational efficiency.{" "}
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-red-400 text-sm font-semibold text-center">
@@ -202,7 +201,7 @@ const AboutPage = () => {
                                 {/* RIGHT */}
                                 <div className="w-1/3 "></div>
                             </div>
-                            
+
                         </motion.div>
                     </div>
                 </div>
