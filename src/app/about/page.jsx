@@ -183,7 +183,7 @@ const AboutPage = () => {
                                         frameworks.{" "}
                                     </div>
                                     {/* JOB DATE */}
-                                    <div className="p-3 text-red-400 text-sm font-semibold">
+                                    <div className="p-3 text-red-400 text-sm font-semibold text-center">
                                         2023 - Present
                                     </div>
                                     {/* JOB COMPANY */}
