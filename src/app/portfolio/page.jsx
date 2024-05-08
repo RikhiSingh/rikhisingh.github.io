@@ -10,31 +10,31 @@ const items = [
         color: "from-red-300 to-blue-300",
         title: "CMS Admin Dashboard",
         desc: "Developed and Designed Web Content Management System using Next.JS, by using Clerk for authentication, TypeScript, TailwindCSS, Zod, Cloudinary, MySQL, Prisma, AXion, ShadCN and more!",
-        img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        link: "https://github.com/RikhiSingh",
+        img: "/CMSAdmin.png",
+        link: "https://github.com/RikhiSingh?tab=repositories",
     },
     {
         id: 2,
         color: "from-blue-300 to-violet-300",
-        title: "Web Store",
+        title: "CMS based Web Store",
         desc: "Fully Designed Web store for customer with Stripe integration, which fetching products and updating order details in the Admin CMS, using TypeScript, ShadCN, TailwindCSS and other latest web technologies!",
-        img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        link: "https://github.com/RikhiSingh",
+        img: "/webStore.png",
+        link: "https://github.com/RikhiSingh?tab=repositories",
     },
     {
         id: 3,
         color: "from-violet-300 to-purple-300",
         title: "Portfolio Website",
         desc: "Developed Portfolio Website using Next.JS, Tailwind CSS, MailJS, Motion-Framer and latest web technologies!",
-        img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        link: "https://github.com/RikhiSingh",
+        img: "/portfolio.png",
+        link: "https://github.com/RikhiSingh/rikhisingh.github.io",
     },
     {
         id: 4,
         color: "from-purple-300 to-red-300",
-        title: "Upcoming..",
-        desc: "In Development (Private Repo)",
-        img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        title: "Duolingo (Upcoming)",
+        desc: "Duolingo Clone, currently under development and unfortunately is a private repo for the moment!",
+        img: "/duolingo.png",
         link: "https://github.com/RikhiSingh",
     },
 ];
@@ -109,8 +109,11 @@ const PortfolioPage = () => {
                                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                                         {item.desc}
                                     </p>
-                                    <Link href={item.link} className="flex justify-end">
-                                        <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                                    <Link href={item.link} className="flex justify-end" target="_blank">
+                                        <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
+
+                                            <Image src='/github.png' alt="github logo" width={24} height={24} />Github
+                                        </button>
                                     </Link>
                                 </div>
                             </div>
