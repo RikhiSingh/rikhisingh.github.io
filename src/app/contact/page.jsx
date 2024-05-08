@@ -72,39 +72,36 @@ const ContactPage = () => {
                     ref={form}
                     className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
                 >
-                    <span className="hidden lg:block">Hi Rikhi,</span>
-                    <div className="flex flex-col gap-4">
-                        <span className="lg:hidden">Hi Rikhi,</span>
-                        <textarea
-                            required
-                            rows={6}
-                            className="bg-transparent border-b-2 border-black outline-none resize-none w-full p-3 rounded"
-                            name="user_message"
-                            placeholder="Type your message here"
-                        />
-                        <span>My mail address is:</span>
-                        <input
-                            required
-                            name="user_email"
-                            type="email"
-                            className="bg-transparent border-b-2 border-b-black outline-none"
-                            placeholder="Your E-Mail Address Please"
-                        />
-                        <span>Regards</span>
-                        <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
-                            Send
-                        </button>
-                        {success && (
-                            <span className="text-green-600 font-semibold">
-                                Your message has been sent successfully!
-                            </span>
-                        )}
-                        {error && (
-                            <span className="text-red-600 font-semibold">
-                                Something went wrong!
-                            </span>
-                        )}
-                    </div>
+                    <span>Hi Rikhi,</span>
+                    <textarea
+                        required
+                        rows={6}
+                        className="bg-transparent border-b-2 border-black outline-none resize-none w-full p-3 rounded"
+                        name="user_message"
+                        placeholder="Type your message here"
+                    />
+                    <span>My mail address is:</span>
+                    <input
+                        required
+                        name="user_email"
+                        type="email"
+                        className="bg-transparent border-b-2 border-b-black outline-none"
+                        placeholder="Your E-Mail Address Please"
+                    />
+                    <span>Regards</span>
+                    <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+                        Send
+                    </button>
+                    {success && (
+                        <span className="text-green-600 font-semibold">
+                            Your message has been sent successfully!
+                        </span>
+                    )}
+                    {error && (
+                        <span className="text-red-600 font-semibold">
+                            Something went wrong!
+                        </span>
+                    )}
                 </form>
             </div>
         </motion.div>
