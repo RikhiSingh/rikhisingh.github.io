@@ -46,7 +46,7 @@ const Homepage = () => {
           {/* title */}
           <h1 className="text-4xl md:text-6xl font-bold">Hi, I am Rikhi</h1>
           {/* description */}
-          <p className="md:text-xl">Web and Software Developer and expertise in Cybersecurity with Certification from University of Michigan, Google, University of Helsinki, Microsoft and Member of CIPS Ontario</p>
+          <p className="md:text-xl">Web and Software Developer with expertise in Cybersecurity with Certification from University of Michigan, Google, University of Helsinki, Microsoft and Member of CIPS Ontario</p>
           {/* Buttons */}
           <div className="flex gap-4 lg:w-full">
             <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white cursor-pointer" onClick={downloadResume}>See my Resume</div>
