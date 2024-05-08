@@ -18,7 +18,7 @@ const items = [
         color: "from-blue-300 to-violet-300",
         title: "CMS based Web Store",
         desc: "Fully Designed Web store for customer with Stripe integration, which fetching products and updating order details in the Admin CMS, using TypeScript, ShadCN, TailwindCSS and other latest web technologies!",
-        img: "./webStore.png",
+        img: "./WebStore.png",
         link: "https://github.com/RikhiSingh?tab=repositories",
     },
     {
