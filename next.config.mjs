@@ -2,10 +2,10 @@
 const nextConfig = {
     output: 'export',
     images:{
+        loader: "custom",
+        loaderFile: "./loader.js",
         remotePatterns:[
             {
-                loader: "custom",
-                loaderFile: "",
                 protocol:"https",
                 hostname:'images.pexels.com',
             },
