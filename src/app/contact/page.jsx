@@ -76,7 +76,7 @@ const ContactPage = () => {
                     <textarea
                         required
                         rows={6}
-                        className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+                        className="bg-transparent border-b-2 border-black outline-none resize-none w-full p-3 rounded"
                         name="user_message"
                         placeholder="Type your message here"
                     />
