@@ -20,6 +20,11 @@ const Homepage = () => {
     document.body.removeChild(link);
   };
 
+  const seeMyWork = () => {
+    // Open the GitHub profile in a new tab
+    window.open('https://github.com/RikhiSingh', '_blank');
+  };
+
   return (
     <motion.div
       className="h-full"
@@ -40,8 +45,8 @@ const Homepage = () => {
           <p className="md:text-xl">Web and Software Developer and expertise in Cybersecurity with Certification from University of Michigan, Google, University of Helsinki, Microsoft and Member of CIPS Ontario</p>
           {/* Buttons */}
           <div className="flex gap-4 lg:w-full">
-            <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white">See my Resume</div>
-            <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white">See my work</div>
+            <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white cursor-pointer" onClick={downloadResume}>See my Resume</div>
+            <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white cursor-pointer" onClick={seeMyWork}>See my work</div>
           </div>
         </div>
       </div>
