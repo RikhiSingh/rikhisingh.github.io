@@ -62,40 +62,40 @@ const AboutPage = () => {
                                 <path d="M110.104 32.8776C110.125 33.2395 110.344 33.5138 110.431 33.8592" stroke="black" stroke-width="3" stroke-linecap="round" />
                                 <path d="M72.6416 92.5877C73.3 92.478 74.1801 91.5995 74.5865 91.279C80.2937 86.7779 85.923 82.1506 91.8906 77.9919C102.409 70.6615 113.767 65.0788 125.299 59.5608C128.196 58.175 131.172 56.9288 133.824 55.1258" stroke="black" stroke-width="3" stroke-linecap="round" />
                             </svg>
+                            {/* BIOGRAPHY SCROLL SVG */}
+                            <div className="flex">
+                                <motion.svg
+                                    initial={{ opacity: 0.2, y: 0 }}
+                                    animate={{ opacity: 1, y: "10px" }}
+                                    transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width={50}
+                                    height={50}
+                                >
+                                    <path
+                                        d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
+                                        stroke="#000000"
+                                        strokeWidth="1"
+                                    ></path>
+                                    <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
+                                    <path
+                                        d="M15 11L12 14L9 11"
+                                        stroke="#000000"
+                                        strokeWidth="1"
+                                    ></path>
+                                </motion.svg>
+                                <motion.div
+                                    initial={{ opacity: 0.2, y: 0 }}
+                                    animate={{ opacity: 1, y: "30px" }}
+                                    transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+                                >
+                                    Scroll Down
+                                </motion.div>
+                            </div>
+                        </div>
 
-                        </div>
-                        {/* BIOGRAPHY SCROLL SVG */}
-                        <div className="flex">
-                            <motion.svg
-                                initial={{ opacity: 0.2, y: 0 }}
-                                animate={{ opacity: 1, y: "10px" }}
-                                transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={50}
-                                height={50}
-                            >
-                                <path
-                                    d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
-                                    stroke="#000000"
-                                    strokeWidth="1"
-                                ></path>
-                                <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
-                                <path
-                                    d="M15 11L12 14L9 11"
-                                    stroke="#000000"
-                                    strokeWidth="1"
-                                ></path>
-                            </motion.svg>
-                            <motion.div
-                                initial={{ opacity: 0.2, y: 0 }}
-                                animate={{ opacity: 1, y: "30px" }}
-                                transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                            >
-                                Scroll Down
-                            </motion.div>
-                        </div>
                     </div>
                     {/* skills container */}
                     <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
