@@ -64,7 +64,7 @@ const AboutPage = () => {
                             </svg>
                         </div>
                         {/* BIOGRAPHY SCROLL SVG */}
-                        <div className="flex mt-6">
+                        <div className="flex mt-[-8.5rem]">
                             <motion.svg
                                 initial={{ opacity: 0.2, y: 0 }}
                                 animate={{ opacity: 1, y: "10px" }}
