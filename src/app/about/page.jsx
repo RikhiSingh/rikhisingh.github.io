@@ -63,7 +63,7 @@ const AboutPage = () => {
                                 <path d="M72.6416 92.5877C73.3 92.478 74.1801 91.5995 74.5865 91.279C80.2937 86.7779 85.923 82.1506 91.8906 77.9919C102.409 70.6615 113.767 65.0788 125.299 59.5608C128.196 58.175 131.172 56.9288 133.824 55.1258" stroke="black" stroke-width="3" stroke-linecap="round" />
                             </svg>
                             {/* BIOGRAPHY SCROLL SVG */}
-                            <div className="flex ">
+                            <div className="flex mt-6">
                                 <motion.svg
                                     initial={{ opacity: 0.2, y: 0 }}
                                     animate={{ opacity: 1, y: "10px" }}
