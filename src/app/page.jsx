@@ -78,7 +78,7 @@ const Homepage = () => {
               href="/portfolio"
               className="p-4 rounded-lg ring-1 ring-black bg-black text-white cursor-pointer"
             >
-              Hire Me
+              See My Work
             </Link>
           </div>
         </div>
