@@ -22,11 +22,6 @@ const Homepage = () => {
     document.body.removeChild(link);
   };
 
-  const seeMyWork = () => {
-    // Open the GitHub profile in a new tab
-    <Link href="/portfolio"/>
-  };
-
   return (
     <motion.div
       className="h-full"
@@ -66,7 +61,7 @@ const Homepage = () => {
           {/* Buttons */}
           <div className="flex gap-4 lg:w-full">
             <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white cursor-pointer" onClick={downloadResume}>See my Resume</div>
-            <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white cursor-pointer" onClick={seeMyWork}>See my work</div>
+            <div className="p-4 rounded-lg ring-1 ring-black bg-black text-white cursor-pointer"><Link href="/portfolio">See my Work</Link></div>
           </div>
         </div>
       </div>
