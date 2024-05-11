@@ -7,36 +7,37 @@ import { useRef } from "react";
 const items = [
     {
         id: 1,
-        color: "from-red-300 to-blue-300",
-        title: "CMS Admin Dashboard",
-        desc: "Developed and Designed Web Content Management System using Next.JS, by using Clerk for authentication, TypeScript, TailwindCSS, Zod, Cloudinary, MySQL, Prisma, AXion, ShadCN and more!",
-        img: "./CMSAdmin.png",
-        link: "https://github.com/RikhiSingh?tab=repositories",
+        color: " from-red-300 to-blue-300",
+        title: "Duolingo (Upcoming)",
+        desc: "Latest Project, Duolingo Clone, currently under development!",
+        img: "./duolingo.png",
+        link: "https://github.com/RikhiSingh/Duolingo-Clone",
     },
     {
         id: 2,
         color: "from-blue-300 to-violet-300",
-        title: "CMS based Web Store",
-        desc: "Fully Designed Web store for customer with Stripe integration, which fetching products and updating order details in the Admin CMS, using TypeScript, ShadCN, TailwindCSS and other latest web technologies!",
-        img: "./WebStore.png",
-        link: "https://github.com/RikhiSingh?tab=repositories",
+        title: "CMS Admin Dashboard",
+        desc: "Developed and Designed Web Content Management System using Next.JS, by using Clerk for authentication, TypeScript, TailwindCSS, Zod, Cloudinary, MySQL, Prisma, AXion, ShadCN and more!",
+        img: "./CMSAdmin.png",
+        link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-admin",
     },
     {
         id: 3,
         color: "from-violet-300 to-purple-300",
+        title: "CMS based Web Store",
+        desc: "Fully Designed Web store for customer with Stripe integration, which fetching products and updating order details in the Admin CMS, using TypeScript, ShadCN, TailwindCSS and other latest web technologies!",
+        img: "./WebStore.png",
+        link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-store",
+    },    
+    {
+        id: 4,
+        color: "from-purple-300 to-red-300",
         title: "Portfolio Website",
         desc: "Developed Portfolio Website using Next.JS, Tailwind CSS, MailJS, Motion-Framer and latest web technologies!",
         img: "./portfolio.png",
         link: "https://github.com/RikhiSingh/rikhisingh.github.io",
     },
-    {
-        id: 4,
-        color: "from-purple-300 to-red-300",
-        title: "Duolingo (Upcoming)",
-        desc: "Duolingo Clone, currently under development and unfortunately is a private repo for the moment!",
-        img: "./duolingo.png",
-        link: "https://github.com/RikhiSingh",
-    },
+    
 ];
 
 const PortfolioPage = () => {
