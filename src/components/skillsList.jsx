@@ -46,8 +46,11 @@ const skills = [
   "Clerk",  
   "PostgreSQL",  
   "Drizzle",  
-  "Neon",  
-  "Neon",  
+  "Neon", 
+  "ZaidxUI", 
+  "Zustand", 
+  "PlanetScale", 
+  "TanStack", 
 ];
 
 // Function to remove duplicates
