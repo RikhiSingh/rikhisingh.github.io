@@ -43,9 +43,16 @@ const skills = [
   "LogRhytm",
   "PuTTy",
   "Suricata",
+  "Clerk",  
+  "PostgreSQL",  
+  "Drizzle",  
+  "Neon",  
+  "Neon",  
 ];
 
-skills.sort();
+const uniqueSkills = [...new Set(skills)];
+
+uniqueSkills.sort();
 
 const SkillList = () => {
   return (
