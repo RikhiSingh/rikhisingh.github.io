@@ -50,9 +50,7 @@ const skills = [
   "Neon",  
 ];
 
-const uniqueSkills = [...new Set(skills)];
-
-uniqueSkills.sort();
+skills.sort();
 
 const SkillList = () => {
   return (
