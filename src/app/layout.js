@@ -13,6 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDG9CTG7"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        {/* <!-- End Google Tag Manager (noscript) --> */}
         {/* as we need metadata to be rendered and transition provider requires use client */}
         <TransitionProvider>{children}</TransitionProvider>
       </body>
