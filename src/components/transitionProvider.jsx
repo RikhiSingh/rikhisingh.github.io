@@ -9,6 +9,11 @@ const TransitionProvider = ({ children }) => {
 
     return (
         <AnimatePresence mode="wait">
+            {/* <!-- Google Tag Manager (noscript) --> */}
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDG9CTG7"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            {/* <!-- End Google Tag Manager (noscript) --> */}
+            {/* as we need metadata to be rendered and transition provider requires use client */}
             <div key={pathName} className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100">
                 <motion.div
                     className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
@@ -29,7 +34,7 @@ const TransitionProvider = ({ children }) => {
                     className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-30"
                     initial={{ height: "140vh" }}
                     animate={{ height: "0vh", transition: { delay: 0.5 } }}
-                /> 
+                />
                 <div className="h-24">
                     <Navbar />
                 </div>
