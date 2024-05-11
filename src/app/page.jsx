@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Link from "next/link";
 
 const Homepage = () => {
 
@@ -23,7 +24,7 @@ const Homepage = () => {
 
   const seeMyWork = () => {
     // Open the GitHub profile in a new tab
-    window.open('https://github.com/RikhiSingh', '_blank');
+    <Link href="/portfolio"/>
   };
 
   return (
