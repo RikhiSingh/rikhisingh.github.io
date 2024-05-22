@@ -9,14 +9,19 @@ const Homepage = () => {
   const downloadResume = () => {
     // Create an anchor element
     const link = document.createElement("a");
+
     // Set the href attribute to the path of your resume PDF
     link.href = "./RikhiSingh - Resume.pdf";
+
     // Set the download attribute to force download the file
     link.download = "RikhiSingh - Resume.pdf";
+
     // Append the anchor element to the body
     document.body.appendChild(link);
+
     // Trigger a click event on the anchor element
     link.click();
+
     // Clean up: remove the anchor element from the DOM
     document.body.removeChild(link);
   };
@@ -30,21 +35,6 @@ const Homepage = () => {
     >
       <Head>
         <link rel="shortcut icon" href="favicon.ico" />
-        {/* <!-- Google Tag Manager --> */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            <!-- Google Tag Manager -->
-            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-PL3C263S');</script>
-            <!-- End Google Tag Manager -->
-            `,
-          }}
-        />
-        {/* <!-- End Google Tag Manager --> */}
       </Head>
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* Image container */}

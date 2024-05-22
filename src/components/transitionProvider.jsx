@@ -10,20 +10,6 @@ const TransitionProvider = ({ children }) => {
     return (
         <AnimatePresence mode="wait">
             <div key={pathName} className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100">
-                {/* <!-- Google Tag Manager (noscript) --> */}
-                <noscript
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                        <!-- Google Tag Manager (noscript) -->
-                        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL3C263S"
-                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-                        <!-- End Google Tag Manager (noscript) -->
-                        `,
-                        
-                    }}
-                />
-                {/* <!-- End Google Tag Manager (noscript) --> */}
-
                 <motion.div
                     className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
                     animate={{ height: "0vh" }}
