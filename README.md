@@ -17,7 +17,6 @@ This repository hosts the personal portfolio website of me, built with React and
    ```bash
    git clone https://github.com/RikhiSingh/rikhisingh.github.io.git
    cd rikhisingh.github.io
-
    
 2. **Install Dependencies**
    ```bash
