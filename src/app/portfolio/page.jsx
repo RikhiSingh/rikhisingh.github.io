@@ -113,24 +113,24 @@ const PortfolioPage = () => {
                                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                                         {item.desc}
                                     </p>
-                                    {item.liveLink && (
-                                        <div className="flex justify-end">
-                                            <Link href={item.liveLink} target="_blank">
+                                    <div className="flex justify-end">
+
+                                        {item.liveLink && (
+                                            <Link href={item.liveLink} className="flex justify-end" target="_blank">
                                                 <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
                                                     <Rss width={24} height={24} />Live
                                                 </button>
                                             </Link>
-                                        </div>
-                                    )}
-                                    {item.link && (
-                                        <div className="flex justify-end">
-                                            <Link href={item.link} target="_blank">
+                                        )}
+                                        {item.link && (
+                                            <Link href={item.link} className="flex justify-end" target="_blank">
                                                 <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
+
                                                     <Image src='./github.png' alt="github logo" width={24} height={24} />Github
                                                 </button>
                                             </Link>
-                                        </div>
-                                    )}
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         ))}
