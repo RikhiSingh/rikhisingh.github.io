@@ -1,19 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-Prime Technologies Used:
+This repository hosts the personal portfolio website of me, built with React and other modern web technologies. It showcases various projects, skills, and experiences in a visually appealing and interactive format.
 
-1. Next.JS
-2. React
-3. Motion-Framer
-4. EmailJS
-5. TailwindCSS
-6. JSON Server
-7. Mongo Atlas
-8. Lucid
+## Features
 
-To Copy the project fork the 3D-Portfolio Branch, as Github Actions for Next.JS requires Relative path with period:
+- **Frontend**: React, JS
+- **Styling**: TailwindCSS for responsive design
+- **Animations**: Framer Motion for smooth animations
+- **Email Integration**: EmailJS for contact form functionality
+- **Backend**: JSON Server and MongoDB Atlas for data management
+- **Icons**: Lucid-react
 
-Correct method : "./image.png"
-Wrong (but for devlopment): "/image.png"
+## Installation
 
-Feel free to contact me for more details or get to know more about the project!
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/RikhiSingh/rikhisingh.github.io.git
+   cd rikhisingh.github.io
+
+   
+2. **Install Dependencies**
+   ```bash
+   npm install
+   
+3. **Run the development server**
+   ```bash
+   npm run dev
+
+4. **Access the Application** <br />
+   Open http://localhost:3000 in your browser.
+
+## Usage
+- View various projects and their details.
+- Use the contact form to get in touch.
+  
+## Contributing <br />
+Contributions are welcome! Please follow these steps: <br />
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes and commit them.
+4. Push to your branch.
+5. Open a pull request.
+
+<br />
+This Markdown file provides a clear and styled README for your project. Feel free to further customize it as needed!
