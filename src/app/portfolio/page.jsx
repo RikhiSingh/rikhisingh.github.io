@@ -3,15 +3,17 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import { Rss } from "lucide-react"
 
 const items = [
     {
         id: 1,
         color: " from-red-300 to-blue-300",
-        title: "Duolingo (Upcoming)",
-        desc: "Latest Project, Duolingo Clone, currently under development!",
+        title: "DuoClone",
+        desc: "Duolingo Clone bootstrapped using NextJS, Drizzle and Neon for DB with admin dashboard and Stripe integration for premium users and in app content purchase. SSO Authentication using google ID.",
         img: "./duolingo.png",
         link: "https://github.com/RikhiSingh/Duolingo-Clone",
+        liveLink: "https://duoclone-rs.vercel.app/"
     },
     {
         id: 2,
@@ -19,7 +21,8 @@ const items = [
         title: "CMS Admin Dashboard",
         desc: "Developed and Designed Web Content Management System using Next.JS, by using Clerk for authentication, TypeScript, TailwindCSS, Zod, Cloudinary, MySQL, Prisma, AXion, ShadCN and more!",
         img: "./CMSAdmin.png",
-        link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-admin",
+        link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-admin",        
+        liveLink: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-admin"
     },
     {
         id: 3,
@@ -28,7 +31,8 @@ const items = [
         desc: "Fully Designed Web store for customer with Stripe integration, which fetching products and updating order details in the Admin CMS, using TypeScript, ShadCN, TailwindCSS and other latest web technologies!",
         img: "./WebStore.png",
         link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-store",
-    },    
+        liveLink: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-store"
+    },
     {
         id: 4,
         color: "from-purple-300 to-red-300",
@@ -36,8 +40,9 @@ const items = [
         desc: "Developed Portfolio Website using Next.JS, Tailwind CSS, MailJS, Motion-Framer and latest web technologies!",
         img: "./portfolio.png",
         link: "https://github.com/RikhiSingh/rikhisingh.github.io",
+        liveLink: "https://rikhisingh.github.io/"
     },
-    
+
 ];
 
 const PortfolioPage = () => {
@@ -110,6 +115,12 @@ const PortfolioPage = () => {
                                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                                         {item.desc}
                                     </p>
+                                    <Link href={item.liveLink} className="flex justify-end" target="_blank">
+                                        <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
+
+                                            <Rss width={24} height={24} />Live
+                                        </button>
+                                    </Link>
                                     <Link href={item.link} className="flex justify-end" target="_blank">
                                         <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
 
