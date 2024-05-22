@@ -21,8 +21,7 @@ const items = [
         title: "CMS Admin Dashboard",
         desc: "Developed and Designed Web Content Management System using Next.JS, by using Clerk for authentication, TypeScript, TailwindCSS, Zod, Cloudinary, MySQL, Prisma, AXion, ShadCN and more!",
         img: "./CMSAdmin.png",
-        link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-admin",        
-        liveLink: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-admin"
+        link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-admin",
     },
     {
         id: 3,
@@ -31,7 +30,6 @@ const items = [
         desc: "Fully Designed Web store for customer with Stripe integration, which fetching products and updating order details in the Admin CMS, using TypeScript, ShadCN, TailwindCSS and other latest web technologies!",
         img: "./WebStore.png",
         link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-store",
-        liveLink: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-store"
     },
     {
         id: 4,
@@ -115,12 +113,13 @@ const PortfolioPage = () => {
                                     <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                                         {item.desc}
                                     </p>
-                                    <Link href={item.liveLink} className="flex justify-end" target="_blank">
-                                        <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
-
-                                            <Rss width={24} height={24} />Live
-                                        </button>
-                                    </Link>
+                                    {item.liveLink && (
+                                        <Link href={item.liveLink} className="flex justify-end" target="_blank">
+                                            <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
+                                                <Rss width={24} height={24} />Live
+                                            </button>
+                                        </Link>
+                                    )}
                                     <Link href={item.link} className="flex justify-end" target="_blank">
                                         <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
 
