@@ -142,6 +142,7 @@ const PortfolioPage = () => {
                                 </div>
                             </div>
                         ))}
+                        <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-transparent to-transparent" />
                     </motion.div>
                 </div>
             </div>
