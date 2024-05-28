@@ -30,10 +30,18 @@ const items = [
         desc: "Fully Designed Web store for customer with Stripe integration, which fetching products and updating order details in the Admin CMS, using TypeScript, ShadCN, TailwindCSS and other latest web technologies!",
         img: "./WebStore.png",
         link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-store",
-    },
-    {
+    },{
         id: 4,
         color: "from-purple-300 to-red-300",
+        title: "Portfolio Website",
+        desc: "Developed Portfolio Website using Next.JS, Tailwind CSS, MailJS, Motion-Framer and latest web technologies!",
+        img: "./portfolio.png",
+        link: "https://github.com/RikhiSingh/rikhisingh.github.io",
+        liveLink: "https://rikhisingh.github.io/"
+    },
+    {
+        id: 5,
+        color: "from-red-300 to-blue-300",
         title: "Portfolio Website",
         desc: "Developed Portfolio Website using Next.JS, Tailwind CSS, MailJS, Motion-Framer and latest web technologies!",
         img: "./portfolio.png",
