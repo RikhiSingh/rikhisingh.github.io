@@ -40,7 +40,7 @@ const Homepage = () => {
         {/* Image container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
-            src="./hero.webp"
+            src="./rawCropped.jpg"
             alt="hero Image"
             fill
             className="object-contain"
