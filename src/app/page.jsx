@@ -11,10 +11,10 @@ const Homepage = () => {
     const link = document.createElement("a");
 
     // Set the href attribute to the path of your resume PDF
-    link.href = "./RikhiSingh - Resume.pdf";
+    link.href = "./Rikhi Singh - Resume.pdf";
 
     // Set the download attribute to force download the file
-    link.download = "RikhiSingh - Resume.pdf";
+    link.download = "Rikhi Singh - Resume.pdf";
 
     // Append the anchor element to the body
     document.body.appendChild(link);
