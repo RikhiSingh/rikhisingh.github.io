@@ -35,13 +35,11 @@ const AboutPage = () => {
                         <h1 className="font-bold text-2xl">ABOUT ME</h1>
                         {/* BIOGRAPHY DESC */}
                         <p className="text-lg">
-                            A diligent individual with my journey in technology is fueled by a commitment to continuous learning and a drive to craft efficient, scalable, and maintainable solutions. Currently, I&apos;m a Software Developer at the University of Guelph, deeply immersed in web and software development. <br /> <br />
-
-                            With expertise in JavaScript, C#, Python, SQL, and HTML/CSS, coupled with frameworks like ReactJS, NodeJS (MERN), TSX/TS, Bootstrap and more, I bring a diverse skill set to the table. My proficiency extends to essential tools and platforms such as Docker, PenTesting, VCS, and the Microsoft 365 Suite. <br /> <br />
-
-                            Throughout my career, I&apos;ve optimized websites for SEO, managed server migrations, and delved into cybersecurity principles. I excel at problem-solving, troubleshooting, and maintaining a meticulous attention to detail. <br /> <br />
-
-                            Certified in cybersecurity, IT automation, and more, I&apos;m equipped to thrive in the fast-paced tech landscape. I&apos;m always eager to collaborate, learn, and contribute to innovative projects. Let&apos;s connect and grow together in the exciting world of technology!
+                        Experienced developer skilled in building scalable web platforms and AI integrations. <br /> <br />
+                        Currently pursuing a Computer Programming Diploma at Conestoga College, <br /> <br />
+                        I&apos;ve led impactful projects, including an AI-driven medical lab platform and an eCommerce solution with personalized crop recommendations. <br /> <br />
+                        Proficient in JavaScript, Python, TypeScript, and frameworks like Next.js and ASP.NET, with certifications in Cyber Security and IT Automation from Google. <br /> <br />
+                        I&apos;m passionate about creating efficient, user-focused solutions that drive engagement and security.
                         </p>
                         {/* BIOGRAPHY QUOTE */}
                         <span className="italic">
@@ -173,7 +171,66 @@ const AboutPage = () => {
                                 {/* LEFT */}
                                 <div className="w-1/3 ">
                                     {/* JOB TITLE */}
-                                    <div className="bg-white p-3 text-lg font-semibold rounded-b-lg rounded-s-lg text-center">
+                                    <div className="bg-white p-3 text-lg font-semibold rounded-tl-lg rounded-bl-lg rounded-tr-none rounded-br-lg text-center">
+                                        Lead Web Developer
+                                    </div>
+                                    {/* JOB DESC */}
+                                    <div className="p-3 text-sm italic">
+                                        Oversee the development and maintenance of complex web applications, ensuring high-quality project delivery. I collaborate with stakeholders to architect scalable solutions and improve development workflows. Additionally, I mentor junior developers and drive cross-functional collaboration to support business growth.{" "}
+                                    </div>
+                                    {/* JOB DATE */}
+                                    <div className="p-3 text-red-400 text-sm font-semibold text-center">
+                                        2021 - Present
+                                    </div>
+                                    {/* JOB COMPANY */}
+                                    <div className="p-2 rounded bg-white text-base font-semibold text-center">
+                                        Eptics Inc.
+                                    </div>
+                                </div>
+                                {/* CENTER */}
+                                <div className="w-1/6 flex justify-center">
+                                    {/* LINE */}
+                                    <div className="w-1 h-full bg-gray-600 rounded relative">
+                                        {/* LINE CIRCLE */}
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                                    </div>
+                                </div>
+                                {/* RIGHT */}
+                                <div className="w-1/3 ">
+                                </div>
+                            </div>
+                            <div className="flex justify-between h-48">
+                                {/* LEFT */}
+                                <div className="w-1/3 ">
+
+                                </div>
+                                {/* CENTER */}
+                                <div className="w-1/6 flex justify-center">
+                                    {/* LINE */}
+                                    <div className="w-1 h-full bg-gray-600 rounded relative">
+                                        {/* LINE CIRCLE */}
+                                        <div className="absolute w-5 h-5 -left-2"></div>
+                                    </div>
+                                </div>
+                                {/* RIGHT */}
+                                <div className="w-1/3 ">
+                                </div>
+                            </div>
+                            <div className="flex justify-between h-48">
+                                {/* LEFT */}
+                                <div className="w-1/3 "></div>
+                                {/* CENTER */}
+                                <div className="w-1/6 flex justify-center">
+                                    {/* LINE */}
+                                    <div className="w-1 h-full bg-gray-600 rounded relative">
+                                        {/* LINE CIRCLE */}
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                                    </div>
+                                </div>
+                                {/* RIGHT */}
+                                <div className="w-1/3 ">
+                                    {/* JOB TITLE */}
+                                    <div className="bg-white p-3 text-lg font-semibold rounded-tl-none rounded-bl-lg rounded-tr-lg rounded-br-lg text-center">
                                         WEB DEVELOPER
                                     </div>
                                     {/* JOB DESC */}
@@ -189,16 +246,6 @@ const AboutPage = () => {
                                         UNIVERSITY OF GUELPH
                                     </div>
                                 </div>
-                                {/* CENTER */}
-                                <div className="w-1/6 flex justify-center">
-                                    {/* LINE */}
-                                    <div className="w-1 h-full bg-gray-600 rounded relative">
-                                        {/* LINE CIRCLE */}
-                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                                    </div>
-                                </div>
-                                {/* RIGHT */}
-                                <div className="w-1/3 "></div>
                             </div>
 
                         </motion.div>

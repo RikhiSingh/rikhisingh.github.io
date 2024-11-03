@@ -4,6 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
+import { TypewriterEffectSmooth } from "../../components/ui/typewriter-effect";
+import { Modal, ModalTrigger } from "../../components/ui/animated-modal";
 
 const Homepage = () => {
   const downloadResume = () => {
@@ -25,6 +27,22 @@ const Homepage = () => {
     // Clean up: remove the anchor element from the DOM
     document.body.removeChild(link);
   };
+
+  const words = [
+    {
+      text: "Hi, ",
+    },
+    {
+      text: "I ",
+    },
+    {
+      text: "am ",
+    },
+    {
+      text: "Rikhi",
+      className: "text-blue-500",
+    },
+  ];
 
   return (
     <motion.div
@@ -49,7 +67,7 @@ const Homepage = () => {
         {/* Text container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* title */}
-          <h1 className="text-4xl md:text-6xl font-bold">Hi, I am Rikhi</h1>
+          <TypewriterEffectSmooth words={words} />
           {/* description */}
           <p className="md:text-xl">
             Web and Software Developer with expertise in Cybersecurity with
@@ -57,23 +75,45 @@ const Homepage = () => {
             Helsinki, Microsoft and Member of CIPS Ontario
           </p>
           {/* Buttons */}
-          <div className="flex gap-4 lg:w-full">
-            <div
-              className="p-4 rounded-lg ring-1 ring-black bg-black text-white cursor-pointer"
-              onClick={downloadResume}
-            >
-              See my Resume
-            </div>
-            <Link
-              href="/portfolio"
-              className="p-4 rounded-lg ring-1 ring-black bg-black text-white cursor-pointer"
-            >
-              See My Work
-            </Link>
+          <div className="flex gap-4 justify-center lg:w-full">
+            <Modal>
+              <ModalTrigger className="bg-black text-white flex justify-center group/modal-btn" >
+                <span
+                  className="group-hover/modal-btn:translate-x-40 transition duration-500 p-4"
+                  onClick={() => downloadResume()}
+                >
+                  See my Resume
+                </span>
+                <div
+                  className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20"
+                  onClick={() => downloadResume()}
+                  style={{ fontSize: '2rem' }}
+                >
+                  📄
+                </div>
+              </ModalTrigger>
+            </Modal>
+            <Modal>
+              <Link href="/portfolio">
+                <ModalTrigger className="bg-black text-white flex justify-center group/modal-btn" >
+                  <span
+                    className="group-hover/modal-btn:translate-x-40 transition duration-500 p-4"
+                  >
+                    See my Work
+                  </span>
+                  <div
+                    className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20"
+                    style={{ fontSize: '2rem' }}
+                  >
+                    ⚒️
+                  </div>
+                </ModalTrigger>
+              </Link>
+            </Modal>
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.div >
   );
 };
 
