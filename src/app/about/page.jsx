@@ -180,7 +180,7 @@ const AboutPage = () => {
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-red-400 text-sm font-semibold text-center">
-                                        2021 - Present
+                                        2022 - Present
                                     </div>
                                     {/* JOB COMPANY */}
                                     <div className="p-2 rounded bg-white text-base font-semibold text-center">
