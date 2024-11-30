@@ -58,10 +58,10 @@ const Homepage = () => {
         {/* Image container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
-            src="./image.webp"
+            src="/image.png"
             alt="hero Image"
             fill
-            className="object-contain"
+            className="object-contain p-10"
           />
         </div>
         {/* Text container */}
