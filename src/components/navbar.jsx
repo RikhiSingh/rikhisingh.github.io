@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
-import { Github, Instagram, Google, Linkedin } from "lucide-react";
+import { FaGithub, FaGoogle, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const links = [
     { url: '/', title: "Home" },
@@ -93,16 +93,16 @@ const Navbar = () => {
             {/* SOCIAL */}
             <div className="hidden md:flex justify-end items-center gap-4 w-1/3">
                 <Link href='https://g.dev/rikhisingh' target="_blank">
-                    <Google alt="Google logo" width={24} height={24} />
+                    <FaGoogle alt="Google logo" width={24} height={24} />
                 </Link>
                 <Link href='https://github.com/RikhiSingh' target="_blank">
-                    <Github alt="Github logo" width={24} height={24} />
+                    <FaGithub alt="Github logo" width={24} height={24} />
                 </Link>
                 <Link href='https://www.linkedin.com/in/rikhi-singh/' target="_blank">
-                    <Linkedin alt="Linkedin logo" width={24} height={24} />
+                    <FaLinkedin alt="Linkedin logo" width={24} height={24} />
                 </Link>
                 <Link href='https://www.instagram.com/rikhi_singh/' target="_blank">
-                    <Instagram alt="Instagram logo" width={24} height={24} />
+                    <FaInstagram alt="Instagram logo" width={24} height={24} />
                 </Link>
             </div>
             {/* menu */}
