@@ -180,7 +180,7 @@ const AboutPage = () => {
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-red-400 text-sm font-semibold text-center">
-                                        2022 - Present
+                                        Jul 2024 - Present
                                     </div>
                                     {/* JOB COMPANY */}
                                     <div className="p-2 rounded bg-white text-base font-semibold text-center">
@@ -239,7 +239,7 @@ const AboutPage = () => {
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-red-400 text-sm font-semibold text-center">
-                                        2023 - Present
+                                        Sep 2023 - Jul 2024
                                     </div>
                                     {/* JOB COMPANY */}
                                     <div className="p-2 rounded bg-white text-base font-semibold text-center">
