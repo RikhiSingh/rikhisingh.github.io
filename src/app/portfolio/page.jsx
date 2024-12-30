@@ -11,7 +11,7 @@ const items = [
         color: " from-red-300 to-blue-300",
         title: "SaaS AI Companion APP",
         desc: "CelebSavvy is a SaaS AI Companion app. It allows users to chat with AI versions of their favorite celebrities and more. Built using modern web technologies, this project aims to deliver an engaging and interactive user experience.",
-        img: "./celebSavvy.png",
+        img: "/celebSavvy.png",
         link: "https://github.com/RikhiSingh/CelebSavvy",
         liveLink: "https://celebsavvy.vercel.app/"
     },
@@ -20,7 +20,7 @@ const items = [
         color: " from-blue-300 to-violet-300",
         title: "Duolingo Clone",
         desc: "Duolingo Clone bootstrapped using NextJS, Drizzle and Neon for DB with admin dashboard and Stripe integration for premium users and in app content purchase. SSO Authentication using google ID.",
-        img: "./duolingo.png",
+        img: "/duolingo.png",
         link: "https://github.com/RikhiSingh/Duolingo-Clone",
         liveLink: "https://duoclone-rs.vercel.app/"
     },
@@ -29,7 +29,7 @@ const items = [
         color: "from-violet-300 to-purple-300",
         title: "CMS Admin Dashboard",
         desc: "Developed and Designed Web Content Management System using Next.JS, by using Clerk for authentication, TypeScript, TailwindCSS, Zod, Cloudinary, MySQL, Prisma, AXion, ShadCN and more!",
-        img: "./CMSAdmin.png",
+        img: "/CMSAdmin.png",
         link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-admin",
     },
     {
@@ -37,14 +37,14 @@ const items = [
         color: "from-purple-300 to-red-300",
         title: "CMS based Web Store",
         desc: "Fully Designed Web store for customer with Stripe integration, which fetching products and updating order details in the Admin CMS, using TypeScript, ShadCN, TailwindCSS and other latest web technologies!",
-        img: "./WebStore.png",
+        img: "/WebStore.png",
         link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-store",
     },{
         id: 5,
         color: "from-red-300 to-blue-300",
         title: "Portfolio Website",
         desc: "Developed Portfolio Website using Next.JS, Tailwind CSS, MailJS, Motion-Framer and latest web technologies!",
-        img: "./portfolio.png",
+        img: "/portfolio.png",
         link: "https://github.com/RikhiSingh/rikhisingh.github.io",
         liveLink: "https://rikhisingh.github.io/"
     },
@@ -134,7 +134,7 @@ const PortfolioPage = () => {
                                             <Link href={item.link} className="flex justify-end" target="_blank">
                                                 <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
 
-                                                    <Image src='./github.png' alt="github logo" width={24} height={24} />Github
+                                                    <Image src='/github.png' alt="github logo" width={24} height={24} />Github
                                                 </button>
                                             </Link>
                                         )}
