@@ -1,182 +1,286 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { useRef } from "react";
-import { Rss } from "lucide-react"
-
-const items = [
-    {
-        id: 1,
-        color: " from-red-300 to-blue-300",
-        title: "SaaS AI Companion APP",
-        desc: "CelebSavvy is a SaaS AI Companion app. It allows users to chat with AI versions of their favorite celebrities and more. Built using modern web technologies, this project aims to deliver an engaging and interactive user experience.",
-        img: "/celebSavvy.png",
-        link: "https://github.com/RikhiSingh/CelebSavvy",
-        liveLink: "https://celebsavvy.vercel.app/"
-    },
-    {
-        id: 2,
-        color: " from-blue-300 to-violet-300",
-        title: "Duolingo Clone",
-        desc: "Duolingo Clone bootstrapped using NextJS, Drizzle and Neon for DB with admin dashboard and Stripe integration for premium users and in app content purchase. SSO Authentication using google ID.",
-        img: "/duolingo.png",
-        link: "https://github.com/RikhiSingh/Duolingo-Clone",
-        liveLink: "https://duoclone-rs.vercel.app/"
-    },
-    {
-        id: 3,
-        color: "from-violet-300 to-purple-300",
-        title: "CMS Admin Dashboard",
-        desc: "Developed and Designed Web Content Management System using Next.JS, by using Clerk for authentication, TypeScript, TailwindCSS, Zod, Cloudinary, MySQL, Prisma, AXion, ShadCN and more!",
-        img: "/CMSAdmin.png",
-        link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-admin",
-    },
-    {
-        id: 4,
-        color: "from-purple-300 to-red-300",
-        title: "CMS based Web Store",
-        desc: "Fully Designed Web store for customer with Stripe integration, which fetching products and updating order details in the Admin CMS, using TypeScript, ShadCN, TailwindCSS and other latest web technologies!",
-        img: "/WebStore.png",
-        link: "https://github.com/RikhiSingh/ecommerceCMS/tree/main/ecommerce-store",
-    },{
-        id: 5,
-        color: "from-red-300 to-blue-300",
-        title: "Portfolio Website",
-        desc: "Developed Portfolio Website using Next.JS, Tailwind CSS, MailJS, Motion-Framer and latest web technologies!",
-        img: "/portfolio.png",
-        link: "https://github.com/RikhiSingh/rikhisingh.github.io",
-        liveLink: "https://rikhisingh.github.io/"
-    },
-
-];
+import React, { useEffect, useId, useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useOutsideClick } from "../../../hooks/use-outside-click";
+import { CircleXIcon } from "lucide-react";
 
 const PortfolioPage = () => {
-    const ref = useRef();
+  const [active, setActive] = useState(null);
+  const id = useId();
+  const ref = useRef(null);
 
-    const { scrollYProgress } = useScroll({ target: ref });
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
+  useEffect(() => {
+    function onKeyDown(event) {
+      if (event.key === "Escape") {
+        setActive(false);
+      }
+    }
 
-    return (
-        <motion.div
-            className="h-full"
-            initial={{ y: "-200vh" }}
-            animate={{ y: "0%" }}
-            transition={{ duration: 1 }}
-        >
-            <div className="h-[600vh] relative" ref={ref}>
-                <div className="w-screen h-[calc(100vh-6rem)] flex flex-col items-center justify-center text-8xl text-center">
-                    <div>
-                        My Works
+    if (active && typeof active === "object") {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [active]);
+
+  useOutsideClick(ref, () => setActive(null));
+
+  return (
+    <motion.div
+      className="h-full"
+      initial={{ y: "-200vh" }}
+      animate={{ y: "0%" }}
+      transition={{ duration: 1 }}
+    >
+      <div className="mr-2 md:mr-0 h-auto">
+        <AnimatePresence>
+          {active && typeof active === "object" && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/20 h-full w-full z-10"
+            />
+          )}
+        </AnimatePresence>
+        <AnimatePresence>
+          {active && typeof active === "object" ? (
+            <div className="fixed inset-0  grid place-items-center z-[100]">
+              <motion.button
+                key={`button-${active.title}-${id}`}
+                layout
+                initial={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: 1,
+                }}
+                exit={{
+                  opacity: 0,
+                  transition: {
+                    duration: 0.05,
+                  },
+                }}
+                className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+                onClick={() => setActive(null)}
+              >
+                <CircleXIcon />
+              </motion.button>
+              <motion.div
+                layoutId={`card-${active.title}-${id}`}
+                ref={ref}
+                className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              >
+                <motion.div layoutId={`image-${active.title}-${id}`}>
+                  <Image
+                    priority
+                    width={600}
+                    height={600}
+                    quality={100}
+                    src={active.src}
+                    alt={active.title}
+                    className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  />
+                </motion.div>
+
+                <div>
+                  <div className="flex justify-between items-start p-4">
+                    <div className="">
+                      <motion.h3
+                        layoutId={`title-${active.title}-${id}`}
+                        className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
+                      >
+                        {active.title}
+                      </motion.h3>
+                      <motion.p
+                        layoutId={`description-${active.description}-${id}`}
+                        className="text-neutral-600 dark:text-neutral-400 text-base"
+                      >
+                        {active.description}
+                      </motion.p>
                     </div>
-                    <div className="flex justify-center items-center text-sm ">
-                        <motion.svg
-                            className="mt-[calc(100%-0px)] bottom-16"
-                            initial={{ opacity: 0.2, y: 0 }}
-                            animate={{ opacity: 1, y: "10px" }}
-                            transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={100}
-                            height={100}
-                        >
-                            <path
-                                d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
-                                stroke="#000000"
-                                strokeWidth="1"
-                            ></path>
-                            <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
-                            <path
-                                d="M15 11L12 14L9 11"
-                                stroke="#000000"
-                                strokeWidth="1"
-                            ></path>
-                        </motion.svg>
-                        <motion.div
-                            className="mt-[calc(100%-0px)] bottom-16 text-xl"
-                            initial={{ opacity: 0.2, y: -15 }}
-                            animate={{ opacity: 1, y: "25px" }}
-                            transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                        >
-                            Scroll Down
-                        </motion.div>
-                    </div>
-                </div>
-                <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
-                    <motion.div style={{ x }} className="flex">
-                        <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
-                        {items.map((item) => (
-                            <div
-                                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
-                                key={item.id}
-                            >
-                                <div className="flex flex-col gap-8 text-white">
-                                    <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
-                                        {item.title}
-                                    </h1>
-                                    <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                                        <Image src={item.img} alt="" fill />
-                                    </div>
-                                    <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
-                                        {item.desc}
-                                    </p>
-                                    <div className="flex justify-end">
 
-                                        {item.liveLink && (
-                                            <Link href={item.liveLink} className="flex justify-end" target="_blank">
-                                                <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
-                                                    <Rss width={24} height={24} />Live
-                                                </button>
-                                            </Link>
-                                        )}
-                                        {item.link && (
-                                            <Link href={item.link} className="flex justify-end" target="_blank">
-                                                <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded flex flex-row gap-2">
-
-                                                    <Image src='/github.png' alt="github logo" width={24} height={24} />Github
-                                                </button>
-                                            </Link>
-                                        )}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                        <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-blue-300 to-violet-300" />
+                    <motion.a
+                      layout
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      href={active.ctaLink}
+                      target="_blank"
+                      className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                    >
+                      {active.ctaText}
+                    </motion.a>
+                  </div>
+                  <div className="pt-4 relative px-4 border-t">
+                    <motion.div
+                      layout
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    >
+                      {typeof active.content === "function"
+                        ? active.content()
+                        : active.content}
                     </motion.div>
+                  </div>
                 </div>
+              </motion.div>
             </div>
-            <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-gradient-to-b from-fuchsia-100 to-violet-200">
-                <h1 className="text-8xl">Do you have a project?</h1>
-                <div className="relative">
-                    <motion.svg
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 8, ease: "linear", repeat: Infinity }}
-                        viewBox="0 0 300 300"
-                        className="w-64 h-64 md:w-[500px] md:h-[500px] "
-                    >
-                        <defs>
-                            <path
-                                id="circlePath"
-                                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
-                            />
-                        </defs>
-                        <text fill="#000">
-                            <textPath xlinkHref="#circlePath" className="text-xl">
-                                Software and Web Developer
-                            </textPath>
-                        </text>
-                    </motion.svg>
-                    <Link
-                        href="/contact"
-                        className="w-20 h-20 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
-                    >
-                        Hire Me
-                    </Link>
+          ) : null}
+        </AnimatePresence>
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-4 p-4 sm:p-8 md:p-12 lg:p-20 lg:px-32">
+          {cards.map((card, index) => (
+            <motion.div
+              layoutId={`card-${card.title}-${id}`}
+              key={card.title}
+              onClick={() => setActive(card)}
+              className="p-4 flex flex-col hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer group"
+            >
+              <div className="flex gap-4 flex-col w-full">
+                <motion.div layoutId={`image-${card.title}-${id}`}>
+                  <Image
+                    width={600}
+                    height={600}
+                    src={card.src}
+                    quality={100}
+                    alt={card.title}
+                    className="h-60 w-full rounded-lg object-cover object-top"
+                  />
+                </motion.div>
+                <div className="flex justify-center items-center flex-col">
+                  <motion.h3
+                    layoutId={`title-${card.title}-${id}`}
+                    className="font-medium text-lg text-neutral-600 dark:text-neutral-800 text-center md:text-left group-hover:text-white"
+                  >
+                    {card.title}
+                  </motion.h3>
+                  <motion.p
+                    layoutId={`description-${card.description}-${id}`}
+                    className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
+                  >
+                    {card.description}
+                  </motion.p>
                 </div>
-            </div>
-        </motion.div>
-    );
+              </div>
+            </motion.div>
+          ))}
+        </ul>
+      </div>
+    </motion.div>
+  );
 };
 
 export default PortfolioPage;
+
+const cards = [
+  {
+    description: "AI Idea Validator",
+    title: "IdeaXcel-AI",
+    src: "/portfolio/ideaxcel.webp",
+    ctaText: "Visit",
+    ctaLink: "https://ideaxcel-ai.vercel.app/",
+    content: () => {
+      return (
+        <p>
+          The ultimate AI-driven business idea validator. Our platform uses
+          multiple advanced AI models and tailored prompts and heuristics to
+          assess the viability of your business idea, considering factors like
+          your concept, target audience, and more. Developed with precision and
+          passion, IdeaXcel-AI empowers entrepreneurs with instant insights and
+          actionable guidance, helping you refine your ideas and bring them
+          closer to reality. Whether you&apos;re a budding innovator or a seasoned
+          entrepreneur, IdeaXcel-AI is your trusted partner on the path to
+          success.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Communocart-Store",
+    title: "E-Commerce Frontend Store",
+    src: "/portfolio/communocart-store.webp",
+    ctaText: "Visit",
+    ctaLink: "https://communocart-store.vercel.app/",
+    content: () => {
+      return (
+        <p>
+          This e-commerce platform allows users to explore and shop from local
+          stores in their vicinity, offering a wide range of fresh, high-quality
+          products. With an easy-to-use interface, customers can browse through
+          stores, place orders, and make secure payments via Stripe, all while
+          supporting local businesses. It&apos;s a seamless way to discover and
+          purchase from nearby stores, bringing fresh, local goods straight to
+          your door.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Communocart-Admin",
+    title: "E-Commerce Admin Panel",
+    src: "/portfolio/communocart-admin.webp",
+    ctaText: "Visit",
+    ctaLink: "https://communocart.vercel.app/",
+    content: () => {
+      return (
+        <p>
+          E-commerce Web CMS for a farm platform using Next.js, Clerk for
+          authentication, TypeScript, TailwindCSS, Zod, Cloudinary, MySQL,
+          Prisma, AXion, and ShadCN. The CMS allows farm owners to easily upload
+          and manage products, with AI-powered crop suggestions to help optimize
+          their offerings. Integrated with Stripe for secure online payments,
+          this platform provides a seamless experience for both farm owners and
+          customers.
+        </p>
+      );
+    },
+  },
+  {
+    description: "CelebSavvy",
+    title: "SaaS AI Companion APP",
+    src: "/portfolio/celebSavvy.png",
+    ctaText: "Visit",
+    ctaLink: "https://celebsavvy.vercel.app/",
+    content: () => {
+      return (
+        <p>
+          CelebSavvy is an innovative SaaS AI Companion app that lets users
+          interact with AI-powered versions of their favorite celebrities. Built
+          with cutting-edge web technologies, CelebSavvy offers a unique,
+          immersive experience where users can engage in personalized
+          conversations, explore celebrity insights, and enjoy exclusive
+          content. This project is designed to provide an entertaining and
+          interactive platform, bringing fans closer to their idols in an
+          entirely new way.
+        </p>
+      );
+    },
+  },
+  {
+    description: "DuoClone",
+    title: "DuoLingo Clone",
+    src: "/portfolio/duolingo.png",
+    ctaText: "Visit",
+    ctaLink: "https://duoclone-rs.vercel.app/",
+    content: () => {
+      return (
+        <p>
+          Duolingo Clone built using Next.js, Drizzle, and Neon for the
+          database, featuring an admin dashboard for easy management. The app
+          includes Stripe integration for premium users and in-app content
+          purchases, while SSO authentication through Google ID ensures a
+          seamless login experience. This project replicates the core
+          functionality of Duolingo, providing an engaging language-learning
+          platform with added features for premium access and content
+          management.
+        </p>
+      );
+    },
+  },
+];
