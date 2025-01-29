@@ -20,7 +20,7 @@
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
-    "autoprefixer": "10.0.1",
+    "autoprefixer": "^10.0.1",
     "eslint": "8",
     "eslint-config-next": "15.1.0",
     "postcss": "8",
